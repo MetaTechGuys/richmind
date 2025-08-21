@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, Trophy, Users, Target, Zap } from "lucide-react"
+import Link from "next/link"
 
 export default function SportPage() {
   const features = [
@@ -42,10 +43,12 @@ export default function SportPage() {
               Elevating athletic performance and sports excellence through innovative management, training, and
               development programs.
             </p>
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-              Discover Our Programs
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Link href="/contact" className="contents">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+                Discover Our Programs
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -54,7 +57,7 @@ export default function SportPage() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-8">Our Sports Philosophy</h2>
+            <h2 className="font-serif text-4xl font-bold golden-title mb-8">Our Sports Philosophy</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               RICHMIND Sport is dedicated to excellence in athletic performance and sports development. We believe that
               success in sports requires a combination of talent, dedication, scientific training methods, and
@@ -74,7 +77,7 @@ export default function SportPage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-6">Sports Services</h2>
+            <h2 className="font-serif text-4xl font-bold golden-title mb-6">Sports Services</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Comprehensive sports management and development services designed to elevate athletic performance and
               achievement.
@@ -107,10 +110,13 @@ export default function SportPage() {
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Partner with RICHMIND Sport to unlock your athletic potential and achieve excellence in competition.
           </p>
-          <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-            Get Started
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          
+          <Link href="/contact" className="contents">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+              Get Started
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </section>
 

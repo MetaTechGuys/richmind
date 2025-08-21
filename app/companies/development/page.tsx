@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, Building2, Zap, Users, Target } from "lucide-react"
+import Link from "next/link"
 
 export default function DevelopmentPage() {
   const features = [
@@ -41,10 +42,12 @@ export default function DevelopmentPage() {
               Building the future through strategic development initiatives that create lasting value for communities
               and stakeholders.
             </p>
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-              Explore Our Projects
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Link href="/contact" className="contents">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+                Explore Our Projects
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link> 
           </div>
         </div>
       </section>
@@ -53,7 +56,7 @@ export default function DevelopmentPage() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-8">Our Development Philosophy</h2>
+            <h2 className="font-serif text-4xl font-bold golden-title mb-8">Our Development Philosophy</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               At RICHMIND Development, we believe in creating sustainable solutions that stand the test of time. Our
               approach combines innovative design with practical functionality, ensuring every project delivers maximum
@@ -72,7 +75,7 @@ export default function DevelopmentPage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-6">Core Development Areas</h2>
+            <h2 className="font-serif text-4xl font-bold golden-title mb-6">Core Development Areas</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Our comprehensive approach to development encompasses multiple sectors and specializations.
             </p>
@@ -105,10 +108,12 @@ export default function DevelopmentPage() {
             Partner with RICHMIND Development to bring your project to life with our expertise and commitment to
             excellence.
           </p>
-          <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-            Start Your Project
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <Link href="/contact" className="contents">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+              Start Your Project
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </section>
 

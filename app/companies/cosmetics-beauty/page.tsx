@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, Sparkles, Leaf, Users, Award } from "lucide-react"
+import Link from "next/link"
 
 export default function CosmeticsBeautyPage() {
   const features = [
@@ -43,10 +44,12 @@ export default function CosmeticsBeautyPage() {
               Redefining beauty through innovative cosmetics and luxury beauty solutions that enhance natural radiance
               and confidence.
             </p>
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-              Discover Our Collection
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Link href="/contact" className="contents">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+                Discover Our Collection
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -55,7 +58,7 @@ export default function CosmeticsBeautyPage() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-8">Our Beauty Philosophy</h2>
+            <h2 className="font-serif text-4xl font-bold golden-title mb-8">Our Beauty Philosophy</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               RICHMIND Cosmetics & Beauty believes that true beauty comes from confidence and self-expression. We create
               premium beauty products that enhance natural features while promoting healthy skin and sustainable beauty
@@ -65,7 +68,7 @@ export default function CosmeticsBeautyPage() {
             <p className="text-lg text-muted-foreground leading-relaxed">
               From luxury skincare to innovative makeup solutions, we combine cutting-edge science with natural
               ingredients to create products that not only look beautiful but also nourish and protect. Our dedication
-              to sustainability ensures that beauty doesn't come at the expense of our planet.
+              to sustainability ensures that beauty doesn&apos;t come at the expense of our planet.
             </p>
           </div>
         </div>
@@ -75,7 +78,7 @@ export default function CosmeticsBeautyPage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-6">Beauty Solutions</h2>
+            <h2 className="font-serif text-4xl font-bold golden-title mb-6">Beauty Solutions</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Comprehensive beauty and cosmetics solutions designed to enhance natural beauty and promote confidence.
             </p>
@@ -105,12 +108,14 @@ export default function CosmeticsBeautyPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-4xl font-bold text-white mb-6">Ready to Enhance Your Beauty?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Discover RICHMIND's premium beauty products and experience the difference of luxury cosmetics.
+            Discover RICHMIND&apos;s premium beauty products and experience the difference of luxury cosmetics.
           </p>
-          <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-            Shop Now
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <Link href="/contact" className="contents">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+              Shop Now
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </section>
 

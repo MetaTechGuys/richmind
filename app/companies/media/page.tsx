@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, Video, Radio, Newspaper, Smartphone } from "lucide-react"
+import Link from "next/link"
 
 export default function MediaPage() {
   const features = [
@@ -44,10 +45,12 @@ export default function MediaPage() {
               Crafting compelling narratives and delivering impactful media solutions that connect brands with their
               audiences across all platforms.
             </p>
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-              Explore Our Services
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Link href="/contact" className="contents">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+                Explore Our Services
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -56,7 +59,7 @@ export default function MediaPage() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-8">Our Media Philosophy</h2>
+            <h2 className="font-serif text-4xl font-bold golden-title mb-8">Our Media Philosophy</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               RICHMIND Media believes in the power of storytelling to inspire, inform, and transform. We create content
               that resonates with audiences while maintaining the highest standards of quality and authenticity. Our
@@ -65,7 +68,7 @@ export default function MediaPage() {
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               From traditional broadcasting to cutting-edge digital platforms, we leverage the latest technologies and
-              creative techniques to ensure our clients' messages reach their intended audiences with maximum impact and
+              creative techniques to ensure our clients&apos; messages reach their intended audiences with maximum impact and
               engagement.
             </p>
           </div>
@@ -76,7 +79,7 @@ export default function MediaPage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-6">Media Services</h2>
+            <h2 className="font-serif text-4xl font-bold golden-title mb-6">Media Services</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Comprehensive media solutions tailored to meet the diverse needs of modern businesses and organizations.
             </p>
@@ -109,10 +112,12 @@ export default function MediaPage() {
             Partner with RICHMIND Media to create compelling content that engages your audience and drives your business
             forward.
           </p>
-          <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-            Start Your Campaign
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <Link href="/contact" className="contents">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+              Start Your Campaign
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </section>
 

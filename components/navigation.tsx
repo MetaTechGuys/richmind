@@ -4,8 +4,9 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import useScrollPosition from "@/lib/scroll"
 
-export function Navigation() {
+export function Navigation({ autohide }: { autohide?: boolean }) {
   const [isOpen, setIsOpen] = useState(false)
 
   const companies = [
@@ -23,11 +24,13 @@ export function Navigation() {
     { name: "Properties & Real Estate", href: "/companies/properties-real-estate" },
   ]
 
+  const y = useScrollPosition()
+
   return (
-    <nav className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-sm border-b border-accent/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <Link href="/" className="font-serif text-2xl font-bold text-primary">
+    <nav className="fixed w-full z-50 bg-background/35 backdrop-blur-sm border-b border-primary/20 glass transition-[top] duration-500" style={{ top: y > 10 ? 0 : autohide ? -80 : 0}}>
+      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16 max-sm:px-4">
+          <Link href="/" className="font-serif text-2xl lg:text-4xl font-bold text-primary">
             RICHMIND
           </Link>
 

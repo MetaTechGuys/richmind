@@ -1,9 +1,8 @@
+import metaImg from '@/public/meta-image.webp'
+import type { Metadata, Viewport } from "next"
+import { Manrope, Playfair_Display } from "next/font/google"
 import type React from "react"
-import type { Metadata } from "next"
-import { Geist, Playfair_Display } from "next/font/google"
-import { Manrope } from "next/font/google"
 import "./globals.css"
-import metaImg from '@/public/meta-image.webp';
 
 const serif = Playfair_Display({
   variable: '--google-font-serif',
@@ -36,6 +35,64 @@ const metaImage = {
   url: meta.url + metaImg.src,
 } as const;
 
+export const metadata: Metadata = {
+  title: meta.title,
+  description: meta.description,
+  abstract: meta.description,
+  keywords: [
+    'Rich Mind',
+    'Richmind',
+    'Investment',
+    'Virtual Assets',
+    'media',
+    'properties',
+    'project Manager',
+    'development',
+    'holiday',
+    'cosmomed',
+    'vip Club',
+    'sport',
+    'academy',
+    'trading',
+  ],
+  openGraph: {
+    title: meta.title,
+    description: meta.description,
+    url: meta.url,
+    type: 'website',
+    images: metaImage.url,
+  },
+  twitter: {
+    title: meta.title,
+    description: meta.description,
+    site: meta.url,
+    images: metaImage,
+    card: 'summary_large_image',
+  },
+  robots: {
+    index: false,
+    follow: false,
+    noarchive: true,
+    nosnippet: true,
+    noimageindex: true,
+    nocache: true,
+    notranslate: true,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  minimumScale: 1,
+  userScalable: false,
+  colorScheme: 'dark',
+  themeColor: '#8f6f39',
+};
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -43,6 +100,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${serif.variable} ${sans.variable} antialiased`}>
+      <head>
+        <link rel="icon" type="image/png" href="/icon.png" />
+      </head>
       <body className="font-sans">{children}</body>
     </html>
   )

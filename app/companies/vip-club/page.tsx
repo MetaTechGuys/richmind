@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, Crown, Users, Calendar, Gift } from "lucide-react"
+import Link from "next/link"
 
 export default function VipClubPage() {
   const features = [
@@ -43,10 +44,13 @@ export default function VipClubPage() {
               An exclusive community for distinguished individuals seeking premium experiences, networking
               opportunities, and luxury lifestyle benefits.
             </p>
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-              Apply for Membership
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+          
+            <Link href="/contact" className="contents">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+                Apply for Membership
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -55,7 +59,7 @@ export default function VipClubPage() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-8">Exclusive Membership Experience</h2>
+            <h2 className="font-serif text-4xl font-bold golden-title mb-8">Exclusive Membership Experience</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               RICHMIND VIP Club is an exclusive community designed for discerning individuals who appreciate the finest
               things in life. Our members enjoy access to unique experiences, premium services, and a network of
@@ -74,7 +78,7 @@ export default function VipClubPage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-6">Membership Benefits</h2>
+            <h2 className="font-serif text-4xl font-bold golden-title mb-6">Membership Benefits</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Exclusive privileges and premium services designed for our distinguished VIP Club members.
             </p>
@@ -106,10 +110,13 @@ export default function VipClubPage() {
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Experience the pinnacle of luxury and exclusivity with RICHMIND VIP Club membership.
           </p>
-          <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-            Request Invitation
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          
+          <Link href="/contact" className="contents">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+              Request Invitation
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </section>
 

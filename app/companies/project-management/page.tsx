@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, CheckCircle, Clock, Users, BarChart3 } from "lucide-react"
+import Link from "next/link"
 
 export default function ProjectManagementPage() {
   const features = [
@@ -45,10 +46,12 @@ export default function ProjectManagementPage() {
               Delivering excellence through strategic project management, ensuring every initiative achieves its
               objectives efficiently and effectively.
             </p>
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-              Explore Our Approach
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Link href="/contact" className="contents">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+                Explore Our Approach
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -57,7 +60,7 @@ export default function ProjectManagementPage() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-8">Our Project Management Philosophy</h2>
+            <h2 className="font-serif text-4xl font-bold golden-title mb-8">Our Project Management Philosophy</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               RICHMIND Project Management combines proven methodologies with innovative approaches to deliver
               exceptional results. We believe that successful project management is built on clear communication,
@@ -76,7 +79,7 @@ export default function ProjectManagementPage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-6">Core Management Services</h2>
+            <h2 className="font-serif text-4xl font-bold golden-title mb-6">Core Management Services</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Comprehensive project management solutions designed to optimize efficiency and ensure successful project
               delivery.
@@ -110,10 +113,12 @@ export default function ProjectManagementPage() {
             Partner with RICHMIND Project Management to ensure your initiatives are delivered successfully and
             efficiently.
           </p>
-          <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-            Start Your Project
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <Link href="/contact" className="contents">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+              Start Your Project
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </section>
 

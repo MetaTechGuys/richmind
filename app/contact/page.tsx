@@ -35,10 +35,10 @@ export default function ContactPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-b from-muted/30 to-background">
+      <section className="pt-24 pb-4 bg-gradient-to-b from-muted/30 to-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="font-serif text-4xl md:text-6xl font-bold text-primary mb-6">Contact Us</h1>
+            <h1 className="font-serif text-4xl md:text-6xl font-bold golden-title mb-6">Contact Us</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Get in touch with our team to explore partnership opportunities and learn more about our global
               operations.
@@ -81,7 +81,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">Message</label>
-                  <Textarea placeholder="Tell us more about your inquiry..." className="min-h-[120px]" />
+                  <Textarea placeholder="Tell us more about your inquiry..." className="min-h-[230px]" />
                 </div>
                 <Button className="w-full bg-primary hover:bg-primary/90">Send Message</Button>
               </CardContent>
@@ -90,9 +90,9 @@ export default function ContactPage() {
             {/* Contact Information */}
             <div className="space-y-6">
               <div>
-                <h2 className="font-serif text-3xl font-bold text-primary mb-6">Get in Touch</h2>
+                <h2 className="font-serif text-3xl font-bold golden-title mb-6">Get in Touch</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  We're here to answer your questions and discuss how RICHMIND Holding can support your business
+                  We&apos;re here to answer your questions and discuss how RICHMIND Holding can support your business
                   objectives. Reach out to us through any of the channels below.
                 </p>
               </div>
@@ -101,7 +101,7 @@ export default function ContactPage() {
                 {contactInfo.map((info) => {
                   const IconComponent = info.icon
                   return (
-                    <Card key={info.title} className="border-accent/20">
+                    <Card key={info.title} className="border-accent/20 py-0!">
                       <CardContent className="p-6">
                         <div className="flex items-start space-x-4">
                           <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0">

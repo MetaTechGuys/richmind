@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, Building, MapPin, TrendingUp, Key } from "lucide-react"
+import Link from "next/link"
 
 export default function PropertiesRealEstatePage() {
   const features = [
@@ -41,10 +42,12 @@ export default function PropertiesRealEstatePage() {
               Building wealth through strategic real estate investments and premium property development in prime global
               locations.
             </p>
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-              Explore Properties
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Link href="https://richmind.com/" target="_blank" className="contents">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+                Explore Properties
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -53,7 +56,7 @@ export default function PropertiesRealEstatePage() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-8">Our Real Estate Vision</h2>
+            <h2 className="font-serif text-4xl font-bold golden-title mb-8">Our Real Estate Vision</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               RICHMIND Properties & Real Estate specializes in identifying, acquiring, and developing premium real
               estate opportunities that deliver exceptional value and long-term growth. We focus on prime locations with
@@ -72,7 +75,7 @@ export default function PropertiesRealEstatePage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-6">Real Estate Services</h2>
+            <h2 className="font-serif text-4xl font-bold golden-title mb-6">Real Estate Services</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Comprehensive real estate solutions designed to maximize investment potential and property value.
             </p>
@@ -104,10 +107,12 @@ export default function PropertiesRealEstatePage() {
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Discover exceptional real estate opportunities with RICHMIND Properties & Real Estate.
           </p>
-          <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-            View Portfolio
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <Link href="https://richmind.com/" target="_blank" className="contents">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+              View Portfolio
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </section>
 

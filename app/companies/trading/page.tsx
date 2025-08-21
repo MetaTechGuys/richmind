@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, TrendingUp, Shield, Globe, Zap } from "lucide-react"
+import Link from "next/link"
 
 export default function TradingPage() {
   const features = [
@@ -45,10 +46,13 @@ export default function TradingPage() {
               Leveraging advanced trading strategies and cutting-edge technology to deliver superior returns in global
               financial markets.
             </p>
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-              Explore Trading Solutions
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            
+            <Link href="/contact" className="contents">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+                Explore Trading Solutions
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -57,7 +61,7 @@ export default function TradingPage() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-8">Our Trading Philosophy</h2>
+            <h2 className="font-serif text-4xl font-bold golden-title mb-8">Our Trading Philosophy</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               RICHMIND Trading operates on the principle that successful trading requires a perfect balance of
               analytical rigor, technological innovation, and disciplined risk management. Our approach combines
@@ -67,7 +71,7 @@ export default function TradingPage() {
             <p className="text-lg text-muted-foreground leading-relaxed">
               We employ sophisticated algorithms, real-time market analysis, and proven trading strategies to deliver
               consistent performance. Our commitment to transparency and ethical trading practices ensures that our
-              clients' interests are always our top priority.
+              clients&apos; interests are always our top priority.
             </p>
           </div>
         </div>
@@ -77,7 +81,7 @@ export default function TradingPage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-6">Trading Capabilities</h2>
+            <h2 className="font-serif text-4xl font-bold golden-title mb-6">Trading Capabilities</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Comprehensive trading solutions powered by advanced technology and expert market knowledge.
             </p>
@@ -109,10 +113,13 @@ export default function TradingPage() {
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Partner with RICHMIND Trading to access sophisticated trading strategies and global market opportunities.
           </p>
-          <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-            Start Trading
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          
+          <Link href="/contact" className="contents">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+              Start Trading
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </section>
 

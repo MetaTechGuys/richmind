@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, MapPin, Plane, Camera, Star } from "lucide-react"
+import Link from "next/link"
 
 export default function TourismHolidayPage() {
   const features = [
@@ -44,10 +45,13 @@ export default function TourismHolidayPage() {
               Creating extraordinary travel experiences and luxury holidays that inspire, rejuvenate, and create lasting
               memories.
             </p>
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-              Plan Your Journey
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+          
+            <Link href="/contact" className="contents">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+                Plan Your Journey
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -56,9 +60,9 @@ export default function TourismHolidayPage() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-8">Our Travel Philosophy</h2>
+            <h2 className="font-serif text-4xl font-bold golden-title mb-8">Our Travel Philosophy</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              RICHMIND Tourism & Holiday believes that travel is more than just visiting new places—it's about creating
+              RICHMIND Tourism & Holiday believes that travel is more than just visiting new places—it&apos;s about creating
               transformative experiences that enrich the soul and broaden perspectives. We curate exceptional journeys
               that combine luxury, authenticity, and adventure to deliver unparalleled travel experiences.
             </p>
@@ -75,7 +79,7 @@ export default function TourismHolidayPage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-6">Travel Services</h2>
+            <h2 className="font-serif text-4xl font-bold golden-title mb-6">Travel Services</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Comprehensive luxury travel services designed to create extraordinary holiday experiences and
               unforgettable journeys.
@@ -108,10 +112,13 @@ export default function TourismHolidayPage() {
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Let RICHMIND Tourism & Holiday create an extraordinary travel experience tailored just for you.
           </p>
-          <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-            Start Planning
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          
+          <Link href="/contact" className="contents">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+              Start Planning
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </section>
 

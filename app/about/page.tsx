@@ -7,8 +7,8 @@ import { Globe, Users, TrendingUp, Award } from "lucide-react"
 export default function AboutPage() {
   const stats = [
     { icon: Globe, label: "Global Markets", value: "50+" },
-    { icon: Users, label: "Team Members", value: "1000+" },
-    { icon: TrendingUp, label: "Portfolio Companies", value: "13" },
+    { icon: Users, label: "Team Members", value: "200+" },
+    { icon: TrendingUp, label: "Portfolio Companies", value: "12" },
     { icon: Award, label: "Years of Excellence", value: "25+" },
   ]
 
@@ -20,7 +20,7 @@ export default function AboutPage() {
       <section className="pt-24 pb-16 bg-gradient-to-b from-muted/30 to-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="font-serif text-4xl md:text-6xl font-bold text-primary mb-6">About RICHMIND Holding</h1>
+            <h1 className="font-serif text-4xl md:text-6xl font-bold golden-title mb-6">About RICHMIND Holding</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               A legacy of excellence, innovation, and sustainable growth across diverse industries worldwide.
             </p>
@@ -50,7 +50,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6">Our Mission</h2>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold golden-title mb-6">Our Mission</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 At RICHMIND Holding, our mission is to use operational expertise and strategic investments to promote
                 innovation, sustainability, and brilliance, reaffirming our ongoing commitment to worldwide community
@@ -64,11 +64,11 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <Image
-                src="/modern-business-team.png"
+                src="/img/about-us/about-us-3.jpg"
                 alt="RICHMIND team collaboration"
                 width={600}
                 height={400}
-                className="rounded-lg shadow-lg"
+                className="rounded-lg shadow-lg object-cover"
               />
             </div>
           </div>
@@ -76,17 +76,18 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 relative">
+        <div className="bg-[image:url(/london-wide.jpg)] bg-fixed bg-cover absolute inset-0 -z-1 opacity-50"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6">Our Core Values</h2>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold golden-title mb-6  brightness-50">Our Core Values</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               The principles that guide every decision and drive our success across all ventures.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="border-accent/20 hover:shadow-lg transition-shadow">
+            <Card className="bg-card/80 glass border-accent/20 hover:shadow-lg transition-shadow">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 mx-auto mb-6 bg-accent/10 rounded-full flex items-center justify-center">
                   <TrendingUp className="h-8 w-8 text-accent" />
@@ -99,7 +100,7 @@ export default function AboutPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-accent/20 hover:shadow-lg transition-shadow">
+            <Card className="bg-card/80 glass border-accent/20 hover:shadow-lg transition-shadow">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 mx-auto mb-6 bg-accent/10 rounded-full flex items-center justify-center">
                   <Users className="h-8 w-8 text-accent" />
@@ -112,7 +113,7 @@ export default function AboutPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-accent/20 hover:shadow-lg transition-shadow">
+            <Card className="bg-card/80 glass border-accent/20 hover:shadow-lg transition-shadow">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 mx-auto mb-6 bg-accent/10 rounded-full flex items-center justify-center">
                   <Globe className="h-8 w-8 text-accent" />
