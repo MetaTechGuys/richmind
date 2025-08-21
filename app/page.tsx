@@ -100,8 +100,8 @@ export default function HomePage() {
       {/* Hero Section with Video Banner */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <video autoPlay muted loop className="w-full h-full object-cover" poster="/luxury-business-exterior.png">
-            <source src="/videos/baner-site.webm" type="video/webm" />
+          <video autoPlay muted loop className="w-full h-full object-cover" poster="/videos/site-banner.webp" preload="metadata">
+            <source src="/videos/site-banner.webm" type="video/webm" />
           </video>
           <div className="absolute inset-0 bg-primary/60"></div>
         </div>
