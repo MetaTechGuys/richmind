@@ -36,7 +36,7 @@ export default function VipClubPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative pt-16 bg-[image:url(/img/companies/9-vipclub/cover.webp)] bg-cover bg-primary/30 bg-blend-overlay">
+      <section className="page-banner bg-[image:url(/img/companies/9-vipclub/cover.webp)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white py-20">
             <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">VIP Club</h1>

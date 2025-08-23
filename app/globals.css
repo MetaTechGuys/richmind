@@ -186,3 +186,7 @@ html {
 @utility outline-shadow {
   text-shadow: 0 0 1px var(--tw-text-shadow-color), 0 0 1px var(--tw-text-shadow-color), 0 0 1px var(--tw-text-shadow-color), 0 0 7px var(--tw-text-shadow-color), 0 0 7px white;
 }
+
+@utility page-banner {
+  @apply relative h-[80vh] bg-cover bg-primary/30 bg-blend-overlay flex items-center justify-center flex-col
+}

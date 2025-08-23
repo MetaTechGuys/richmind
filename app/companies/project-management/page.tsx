@@ -38,7 +38,7 @@ export default function ProjectManagementPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative pt-16 pb-20 bg-gradient-to-br from-primary to-primary/80">
+      <section className="page-banner bg-[image:url(/img/companies/)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white py-20">
             <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">Project Management</h1>

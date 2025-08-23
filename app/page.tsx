@@ -119,13 +119,7 @@ export default function HomePage() {
             Our mission is to use operational expertise and strategic investments to promote innovation, sustainability,
             and brilliance, reaffirming our ongoing mission to do worldwide community service.
           </p>
-          <Link href="#companies" className="contents">
-            <Button size="lg" className="bg-linear-(--golded-gradient) text-accent-foreground hover:bg-accent/90 text-lg px-8 py-3 ps-8! font-bold">
-              Discover
-              <ArrowRight className="ml-2 size-6" />
-            </Button>
-          </Link>
-          <ScrollInviter className="mt-10 [animation-duration:2000ms] " href="#companies" />
+          <ScrollInviter className="mt-40 select-nones [animation-duration:2000ms] " href="#companies" />
         </div>
       </section>
 
