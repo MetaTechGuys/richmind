@@ -38,7 +38,7 @@ export default function TradingPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="page-banner bg-[image:url(/img/companies/)]">
+      <section className="page-banner bg-[image:url(/img/companies/12-trading/cover.webp)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white py-20">
             <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">Trading</h1>
@@ -48,7 +48,7 @@ export default function TradingPage() {
             </p>
             
             <Link href="/contact" className="contents">
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90 ps-8!">
                 Explore Trading Solutions
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -115,7 +115,7 @@ export default function TradingPage() {
           </p>
           
           <Link href="/contact" className="contents">
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90 ps-8!">
               Start Trading
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

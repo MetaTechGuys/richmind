@@ -44,7 +44,7 @@ export default function SportPage() {
               development programs.
             </p>
             <Link href="/contact" className="contents">
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90 ps-8!">
                 Discover Our Programs
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -112,7 +112,7 @@ export default function SportPage() {
           </p>
           
           <Link href="/contact" className="contents">
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90 ps-8!">
               Get Started
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

@@ -82,8 +82,8 @@ export default function FintechPage() {
             {features.map((feature) => {
               const IconComponent = feature.icon
               return (
-                <Card key={feature.title} className="border-accent/20 hover:shadow-lg transition-shadow">
-                  <CardContent className="p-6 text-center">
+                <Card key={feature.title} className="border-accent/20 hover:shadow-lg transition-shadow pb-0! pt-5">
+                  <CardContent className="p-5 text-center">
                     <div className="w-16 h-16 mx-auto mb-4 bg-accent/10 rounded-full flex items-center justify-center">
                       <IconComponent className="h-8 w-8 text-accent" />
                     </div>
@@ -146,6 +146,7 @@ export default function FintechPage() {
               </p>
             </CardContent>
           </Card>
+
         </div>
       </section>
 

@@ -47,7 +47,7 @@ export default function TourismHolidayPage() {
             </p>
           
             <Link href="/contact" className="contents">
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90 ps-8!">
                 Plan Your Journey
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -114,7 +114,7 @@ export default function TourismHolidayPage() {
           </p>
           
           <Link href="/contact" className="contents">
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90 ps-8!">
               Start Planning
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

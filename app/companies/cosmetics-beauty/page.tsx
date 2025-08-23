@@ -45,7 +45,7 @@ export default function CosmeticsBeautyPage() {
               and confidence.
             </p>
             <Link href="/contact" className="contents">
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90 ps-8!">
                 Discover Our Collection
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -111,7 +111,7 @@ export default function CosmeticsBeautyPage() {
             Discover RICHMIND&apos;s premium beauty products and experience the difference of luxury cosmetics.
           </p>
           <Link href="/contact" className="contents">
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90 ps-8!">
               Shop Now
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

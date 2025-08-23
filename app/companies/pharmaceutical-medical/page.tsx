@@ -47,7 +47,7 @@ export default function PharmaceuticalMedicalPage() {
               lives globally.
             </p>
             <Link href="/contact" className="contents">
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90 ps-8!">
                 Explore Our Solutions
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -114,7 +114,7 @@ export default function PharmaceuticalMedicalPage() {
             difference.
           </p>
           <Link href="/contact" className="contents">
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90 ps-8!">
               Learn More
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

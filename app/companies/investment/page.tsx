@@ -1,8 +1,10 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import { TrendingUp, Globe, Shield, Users } from "lucide-react"
+import { TrendingUp, Globe, Shield, Users, ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export default function InvestmentPage() {
   const features = [
@@ -40,14 +42,32 @@ export default function InvestmentPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-b from-muted/30 to-background">
+      <section className="page-banner bg-[image:url(/img/companies/1-investment/cover.webp)] bg-primary/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-white py-20">
+            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">Investment</h1>
+            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
+              At Richmind Investment, we see capital not as a number but as a force of transformation. We channel
+              resources into ventures that push boundaries, shape economies, and open new doors to global prosperity.
+            </p>
+            <Link href="/contact-us" target="_blank" className="contents">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90 ps-8!">
+                Explore Opportunities
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Hero Section */}
+      {/* <section className="pt-24 pb-16 bg-gradient-to-b from-muted/30 to-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="font-serif text-4xl md:text-6xl font-bold golden-title mb-6">Investment</h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                At Richmind Investment, we see capital not as a number but as a force of transformation. We channel
-                resources into ventures that push boundaries, shape economies, and open new doors to global prosperity.
               </p>
             </div>
             <div className="relative">
@@ -61,7 +81,7 @@ export default function InvestmentPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Philosophy Section */}
       <section className="py-20">
@@ -100,17 +120,17 @@ export default function InvestmentPage() {
       {/* Core Areas Section */}
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
             <div>
               <Image
-                src="/renewable-energy-landscape.png"
+                src="/img/companies/1-investment/box.webp"
                 alt="Sustainable investments"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-lg"
               />
             </div>
-            <div>
+            <div className="lg:col-span-2">
               <h2 className="font-serif text-3xl md:text-4xl font-bold golden-title mb-6">Core Areas</h2>
               <div className="space-y-4">
                 {coreAreas.map((area, index) => (

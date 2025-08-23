@@ -46,7 +46,7 @@ export default function MediaPage() {
               audiences across all platforms.
             </p>
             <Link href="/contact" className="contents">
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90 ps-8!">
                 Explore Our Services
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -89,7 +89,7 @@ export default function MediaPage() {
             {features.map((feature) => {
               const IconComponent = feature.icon
               return (
-                <Card key={feature.title} className="border-accent/20 hover:shadow-lg transition-shadow">
+                <Card key={feature.title} className="border-accent/20 hover:shadow-lg transition-shadow py-0!">
                   <CardContent className="p-8">
                     <div className="w-16 h-16 mb-6 bg-accent/10 flex items-center justify-center">
                       <IconComponent className="h-8 w-8 text-accent" />
@@ -113,7 +113,7 @@ export default function MediaPage() {
             forward.
           </p>
           <Link href="/contact" className="contents">
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90 ps-8!">
               Start Your Campaign
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

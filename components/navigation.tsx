@@ -28,7 +28,7 @@ export function Navigation({ autohide }: { autohide?: boolean }) {
 
   return (
     <header className="fixed w-full z-50 group/header h-16">
-      <nav className="w-full bg-background/35 hover:bg-background backdrop-blur-sm border-b border-primary/20 glass transition-all duration-500 group-hover/header:top-0! pointer-coarse:top-0! pointer-coarse:bg-background! relative" style={{ top: y > 10 ? 0 : autohide ? -80 : 0}}>
+      <nav className="w-full bg-background/35 hover:bg-background hover:shadow backdrop-blur-sm border-b border-primary/20 glass transition-all duration-500 group-hover/header:top-0! pointer-coarse:top-0! pointer-coarse:bg-background! relative" style={{ top: y > 10 ? 0 : autohide ? -80 : 0}}>
         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 max-sm:px-4">
             <Link href="/" className="font-serif text-2xl lg:text-4xl font-bold text-primary">

@@ -46,7 +46,7 @@ export default function VipClubPage() {
             </p>
           
             <Link href="/contact" className="contents">
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90 ps-8!">
                 Apply for Membership
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -112,7 +112,7 @@ export default function VipClubPage() {
           </p>
           
           <Link href="/contact" className="contents">
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90 ps-8!">
               Request Invitation
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
