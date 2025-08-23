@@ -2,7 +2,9 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
-import { Smartphone, Brain, Globe, Shield } from "lucide-react"
+import { Smartphone, Brain, Globe, Shield, ArrowRight } from "lucide-react"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export default function FintechPage() {
   const features = [
@@ -40,26 +42,21 @@ export default function FintechPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-b from-muted/30 to-background">
+      <section className="page-banner bg-[image:url(/img/companies/4-properties/cover.webp)] bg-primary/45">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="font-serif text-4xl md:text-6xl font-bold golden-title mb-6">Fintech</h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                The Fintech division is where technology and finance converge to reimagine the way the world transacts,
-                invests, and saves. We build digital infrastructures that democratize financial services, reduce
-                inefficiencies, and empower individuals and enterprises alike.
-              </p>
-            </div>
-            <div className="relative">
-              <Image
-                src="/img/companies/box-2-virtualassets.webp"
-                alt="Fintech solutions"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-              />
-            </div>
+          <div className="text-center text-white py-20">
+            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">Fintech</h1>
+            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
+              The Fintech division is where technology and finance converge to reimagine the way the world transacts,
+              invests, and saves. We build digital infrastructures that democratize financial services, reduce
+              inefficiencies, and empower individuals and enterprises alike.
+            </p>
+            <Link href="/contacts" target="_blank" className="contents">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90 ps-8!">
+                Schedule a Consultation
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

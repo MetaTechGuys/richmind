@@ -77,11 +77,11 @@ export default function AboutPage() {
 
       {/* Values Section */}
       <section className="py-20 relative">
-        <div className="bg-[image:url(/london-wide.jpg)] bg-fixed bg-cover absolute inset-0 -z-1 opacity-50"></div>
+        <div className="bg-[image:url(/london-wide.jpg)] bg-fixed bg-cover absolute inset-0 -z-1 bg-primary/45 bg-blend-overlay"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold golden-title mb-6  brightness-50">Our Core Values</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-6">Our Core Values</h2>
+            <p className="text-lg max-w-3xl mx-auto text-white/90">
               The principles that guide every decision and drive our success across all ventures.
             </p>
           </div>

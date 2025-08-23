@@ -85,7 +85,7 @@ export default function PropertiesRealEstatePage() {
             {features.map((feature) => {
               const IconComponent = feature.icon
               return (
-                <Card key={feature.title} className="border-accent/20 hover:shadow-lg transition-shadow">
+                <Card key={feature.title} className="border-accent/20 hover:shadow-lg transition-shadow py-0!">
                   <CardContent className="p-8">
                     <div className="w-16 h-16 mb-6 bg-accent/10 flex items-center justify-center">
                       <IconComponent className="h-8 w-8 text-accent" />

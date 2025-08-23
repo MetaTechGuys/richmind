@@ -40,18 +40,18 @@ const points: IPoint[] = [
 export default function HomePage() {
   const showClickMap = useBoolean();
   const companies = [
-    { name: "Investment", href: "/companies/investment", icon: TrendingUp, image: '/img/companies/box-1-investment.webp' },
-    { name: "Development", href: "/companies/development", icon: Globe, image: '/img/companies/box-6-development.webp' },
-    { name: "Media", href: "/companies/media", icon: Users, image: '/img/companies/3-media/box.webp' },
-    { name: "Fintech", href: "/companies/fintech", icon: TrendingUp, image: '/img/companies/box-2-virtualassets.webp' },
-    { name: "Project Management", href: "/companies/project-management", icon: Users, image: '/img/companies/box-5-projectmanager.webp' },
-    { name: "Trading", href: "/companies/trading", icon: TrendingUp, image: '/img/companies/box-12-trading.webp' },
-    { name: "Pharmaceutical & Medical", href: "/companies/pharmaceutical-medical", icon: Globe, image: '/img/companies/8-cosmomed/box.webp' },
-    { name: "Cosmetics & Beauty", href: "/companies/cosmetics-beauty", icon: Users, image: '/img/companies/8-cosmomed/box.webp' },
-    { name: "Tourism & Holiday", href: "/companies/tourism-holiday", icon: Globe, image: '/img/companies/7-holiday/box.webp' },
-    { name: "VIP Club", href: "/companies/vip-club", icon: Users, image: '/img/companies/9-vipclub/box.webp' },
-    { name: "Sport", href: "/companies/sport", icon: Users, image: '/img/companies/10-sport/box.webp' },
-    { name: "Properties & Real Estate", href: "/companies/properties-real-estate", icon: TrendingUp, image: '/img/companies/box-4-properties.webp' },
+    { name: "Investment", href: "/companies/investment", icon: TrendingUp, image: '/img/companies/investment.webp' },
+    { name: "Development", href: "/companies/development", icon: Globe, image: '/img/companies/development.webp' },
+    { name: "Media", href: "/companies/media", icon: Users, image: '/img/companies/media.webp' },
+    { name: "Fintech", href: "/companies/fintech", icon: TrendingUp, image: '/img/companies/fintech.webp' },
+    { name: "Project Management", href: "/companies/project-management", icon: Users, image: '/img/companies/project-managment.webp' },
+    { name: "Trading", href: "/companies/trading", icon: TrendingUp, image: '/img/companies/trading.webp' },
+    { name: "Pharmaceutical & Medical", href: "/companies/pharmaceutical-medical", icon: Globe, image: '/img/companies/medical.webp' },
+    { name: "Cosmetics & Beauty", href: "/companies/cosmetics-beauty", icon: Users, image: '/img/companies/cosmetics.webp' },
+    { name: "Tourism & Holiday", href: "/companies/tourism-holiday", icon: Globe, image: '/img/companies/tourism.webp' },
+    { name: "VIP Club", href: "/companies/vip-club", icon: Users, image: '/img/companies/vip-club.webp' },
+    { name: "Sport", href: "/companies/sport", icon: Users, image: '/img/companies/sport.webp' },
+    { name: "Properties & Real Estate", href: "/companies/properties-real-estate", icon: TrendingUp, image: '/img/companies/properties.webp' },
   ]
 
   const strategies = [
@@ -143,21 +143,33 @@ export default function HomePage() {
               const IconComponent = company.icon
               return (
                 <Link key={company.href} href={company.href}>
-                  <Card className="h-full hover:shadow-lg transition-all duration-300 hover:border-accent group relative aspect-4/3">
-                    {/* <img
-                      className="absolute object-cover inset-0 size-full z-0"
-                      src={company.image}
-                    /> */}
-                    <CardContent className="p-6 text-center z-1">
-                      <div className="w-16 h-16 mx-auto mb-4 bg-accent/10 rounded-full flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                        <IconComponent className="h-8 w-8 text-accent" />
+                  <div className="--flip-card">
+                    <div className="flip-card-inner aspect-4/3">
+                      <div className="flip-card-front">
+                        <Card className="h-full hover:shadow-lg transition-all duration-300 hover:border-accent group relative aspect-4/3 ">
+                          {/* <img
+                            className="absolute object-cover inset-0 size-full z-0"
+                            src={company.image}
+                          /> */}
+                          <CardContent className="p-6 text-center z-1">
+                            <div className="w-16 h-16 mx-auto mb-4 bg-accent/10 rounded-full flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                              <IconComponent className="h-8 w-8 text-accent" />
+                            </div>
+                            <h3 className="font-semibold text-lg text-primary mb-2 group-hover:text-accent transition-colors">
+                              {company.name}
+                            </h3>
+                            <ArrowRight className="h-4 w-4 mx-auto text-muted-foreground group-hover:text-accent transition-colors" />
+                          </CardContent>
+                        </Card>
                       </div>
-                      <h3 className="font-semibold text-lg text-primary mb-2 group-hover:text-accent transition-colors">
-                        {company.name}
-                      </h3>
-                      <ArrowRight className="h-4 w-4 mx-auto text-muted-foreground group-hover:text-accent transition-colors" />
-                    </CardContent>
-                  </Card>
+                      {/* <div className="flip-card-back">
+                        <img
+                          className="absolute object-cover inset-0 size-full z-0"
+                          src={company.image}
+                        />
+                      </div> */}
+                    </div> 
+                  </div>
                 </Link>
               )
             })}

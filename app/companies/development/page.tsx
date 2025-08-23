@@ -34,7 +34,7 @@ export default function DevelopmentPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="page-banner bg-[image:url(/img/companies/6-development/cover.webp)]">
+      <section className="page-banner bg-[image:url(/img/companies/6-development/cover.webp)] bg-bottom">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white py-20">
             <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">Development</h1>
@@ -85,7 +85,7 @@ export default function DevelopmentPage() {
             {features.map((feature) => {
               const IconComponent = feature.icon
               return (
-                <Card key={feature.title} className="border-accent/20 hover:shadow-lg transition-shadow">
+                <Card key={feature.title} className="border-accent/20 hover:shadow-lg transition-shadow py-0!">
                   <CardContent className="p-8">
                     <div className="w-16 h-16 mb-6 bg-accent/10 flex items-center justify-center">
                       <IconComponent className="h-8 w-8 text-accent" />

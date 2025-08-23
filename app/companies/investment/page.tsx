@@ -50,7 +50,7 @@ export default function InvestmentPage() {
               At Richmind Investment, we see capital not as a number but as a force of transformation. We channel
               resources into ventures that push boundaries, shape economies, and open new doors to global prosperity.
             </p>
-            <Link href="/contact-us" target="_blank" className="contents">
+            <Link href="/contacts" target="_blank" className="contents">
               <Button size="lg" className="bg-white text-primary hover:bg-white/90 ps-8!">
                 Explore Opportunities
                 <ArrowRight className="ml-2 h-5 w-5" />

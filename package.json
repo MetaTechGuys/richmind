@@ -1,7 +1,7 @@
 {
   "name": "my-v0-project",
-  "version": "1.0.5",
-  "version.stamp": 1755947897541,
+  "version": "1.0.6",
+  "version.stamp": 1755962406835,
   "private": true,
   "scripts": {
     "build": "next build",
@@ -50,6 +50,7 @@
     "input-otp": "1.4.1",
     "lottie-react": "^2.4.1",
     "lucide-react": "^0.454.0",
+    "motion": "^12.23.12",
     "next": "15.2.4",
     "next-themes": "^0.4.6",
     "react": "^19",
