@@ -182,3 +182,7 @@ html {
 @utility golden-title {
   @apply bg-linear-(--golded-gradient-2) bg-clip-text text-transparent
 }
+
+@utility outline-shadow {
+  text-shadow: 0 0 1px var(--tw-text-shadow-color), 0 0 1px var(--tw-text-shadow-color), 0 0 1px var(--tw-text-shadow-color), 0 0 7px var(--tw-text-shadow-color), 0 0 7px white;
+}

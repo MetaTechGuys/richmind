@@ -149,11 +149,11 @@ export default function HomePage() {
               const IconComponent = company.icon
               return (
                 <Link key={company.href} href={company.href}>
-                  <Card className="h-full hover:shadow-lg transition-all duration-300 hover:border-accent group relative aspect-video">
-                      {/* <img
-                        className="absolute object-cover inset-0 size-full z-0"
-                        src={company.image}
-                      /> */}
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 hover:border-accent group relative aspect-4/3">
+                    {/* <img
+                      className="absolute object-cover inset-0 size-full z-0"
+                      src={company.image}
+                    /> */}
                     <CardContent className="p-6 text-center z-1">
                       <div className="w-16 h-16 mx-auto mb-4 bg-accent/10 rounded-full flex items-center justify-center group-hover:bg-accent/20 transition-colors">
                         <IconComponent className="h-8 w-8 text-accent" />
@@ -161,7 +161,7 @@ export default function HomePage() {
                       <h3 className="font-semibold text-lg text-primary mb-2 group-hover:text-accent transition-colors">
                         {company.name}
                       </h3>
-                      {/* <ArrowRight className="h-4 w-4 mx-auto text-muted-foreground group-hover:text-accent transition-colors" /> */}
+                      <ArrowRight className="h-4 w-4 mx-auto text-muted-foreground group-hover:text-accent transition-colors" />
                     </CardContent>
                   </Card>
                 </Link>

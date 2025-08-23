@@ -35,7 +35,7 @@ export default function SportPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative pt-16 pb-20 bg-gradient-to-br from-primary to-primary/80">
+      <section className="relative pt-16 bg-[image:url(/img/companies/10-sport/cover.webp)] bg-cover bg-primary/30 bg-blend-overlay">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white py-20">
             <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">Sport</h1>
