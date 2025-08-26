@@ -23,8 +23,8 @@ export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-7 gap-8">
-          <div className="col-span-1 md:col-span-2">
+        <div className="grid grid-cols-1 sm:grid-cols-7 gap-8">
+          <div className="col-span-full sm:col-span-3 lg:col-span-2 max-sm:flex max-sm:flex-col  max-sm:items-center-safe">
             <Image
               width={200}
               height={200}
@@ -33,7 +33,7 @@ export function Footer() {
               className="w-55 object-center object-contain h-auto"
             />
             <h3 className="font-serif text-2xl font-bold mb-4">RICHMIND Holding</h3>
-            <p className="text-primary-foreground/80 mb-6 max-w-md">
+            <p className="text-primary-foreground/80 sm:mb-6 max-w-md">
               Global reach, local expertise. Our mission is to use operational expertise and strategic investments to
               promote innovation, sustainability, and brilliance.
             </p>
@@ -54,7 +54,7 @@ export function Footer() {
             </div> */}
           </div>
 
-          <div className="md:justify-self-center-safe text-nowrap w-min  md:col-span-3">
+          <div className="md:justify-self-center-safe text-nowrap w-min md:col-span-3 max-sm:w-md max-sm:justify-self-center-safe">
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
@@ -93,7 +93,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="md:justify-self-start text-nowrap w-min">
+          <div className="md:justify-self-start text-nowrap w-min max-lg:hidden">
             <h4 className="font-semibold mb-4">Our Companies</h4>
             <ul className="space-y-2">
               {companies.slice(0, 7).map((company) => (
@@ -109,7 +109,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="md:justify-self-end text-nowrap w-min">
+          <div className="md:justify-self-end text-nowrap w-min max-lg:hidden">
             <h4 className="font-semibold mb-4">&nbsp;</h4>
             <ul className="space-y-2">
               {companies.slice(7).map((company) => (

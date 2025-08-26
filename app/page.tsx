@@ -105,7 +105,7 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-primary/60"></div>
         </div>
 
-        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+        <div className="relative z-10 text-center text-white max-w-4xl m-auto px-4 pointer-coarse:mt-18!">
           <Image
             width={200}
             height={200}
@@ -171,7 +171,7 @@ export default function HomePage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold golden-title mb-6">Our Global Branches</h2>
+            <h2 className="font-serif text-4xl md:text-5xl font-bold golden-title mb-6">Global Presence</h2>
             <div className="relative aspect-video">
               <Lottie
                 animationData={animationData}
@@ -208,7 +208,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[image:url(/london-wide.jpg)] bg-fixed bg-cover absolute inset-0 -z-1 opacity-50"></div>
           <div className="text-center mb-16 z-1">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold golden-title mb-6 brightness-90">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 brightness-90">
               High Standards in Global Investments
             </h2>
             <div className="max-w-4xl mx-auto">
