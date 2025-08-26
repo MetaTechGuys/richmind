@@ -139,7 +139,7 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {companies.map((company) => {
-              // const IconComponent = company.icon
+              const IconComponent = company.icon
               return (
                 <Link key={company.href} href={company.href}>
                   <Card className="h-full hover:shadow-[0_0_15px_0px_oklab(0.6_0.01_0.08_/_0.8)] transition-all duration-300 hover:border-accent group relative overflow-clip py-0! gap-0!">
@@ -148,6 +148,7 @@ export default function HomePage() {
                       // style={{ maskImage: `radial-gradient(circle at bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%)` }}
                       src={company.image}
                     />
+                    {/* <div className="absolute bg-gold-lighter/60 inset-0 z-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div> */}
                     {/* <CardContent className="p-6 text-center z-1 relative">
                       <div className="size-20 mx-auto bg-accent/70 rounded-full flex items-center justify-center group-hover:opacity-100 opacity-10 transition duration-500 absolute inset-0 m-auto">
                         <IconComponent className="size-10 text-gold-100" />

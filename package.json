@@ -1,7 +1,7 @@
 {
   "name": "my-v0-project",
-  "version": "1.0.8",
-  "version.stamp": 1756221057201,
+  "version": "1.0.9",
+  "version.stamp": 1756223635132,
   "private": true,
   "scripts": {
     "build": "next build",

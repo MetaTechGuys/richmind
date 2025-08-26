@@ -6,7 +6,6 @@ import { ComponentProps, useState } from 'react';
 
 export default function ScrollInviter({ className, ...props }: ComponentProps<'a'>) {
   const y = useScrollPosition()
-  console.log({ y });
   
   return (
     <div
