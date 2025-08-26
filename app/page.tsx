@@ -1,12 +1,11 @@
 'use client'
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import Lottie from 'lottie-react';
 import animationData from '@/public/animates/worldmap/data.json';
-import { ArrowRight, Globe, Users, TrendingUp, Lightbulb, Handshake, Leaf } from "lucide-react"
+import { Apple, Martini, TrendingUp, Lightbulb, Handshake, Leaf, Hammer, Clapperboard, Landmark, CandlestickChart, HeartPulse, Plane, Volleyball, HousePlus, LucideGanttChartSquare } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useBoolean } from 'usehooks-ts';
 import Image from "next/image"
@@ -41,17 +40,17 @@ export default function HomePage() {
   const showClickMap = useBoolean();
   const companies = [
     { name: "Investment", href: "/companies/investment", icon: TrendingUp, image: '/img/companies/investment.webp' },
-    { name: "Development", href: "/companies/development", icon: Globe, image: '/img/companies/development.webp' },
-    { name: "Media", href: "/companies/media", icon: Users, image: '/img/companies/media.webp' },
-    { name: "Fintech", href: "/companies/fintech", icon: TrendingUp, image: '/img/companies/fintech.webp' },
-    { name: "Project Management", href: "/companies/project-management", icon: Users, image: '/img/companies/project-managment.webp' },
-    { name: "Trading", href: "/companies/trading", icon: TrendingUp, image: '/img/companies/trading.webp' },
-    { name: "Pharmaceutical & Medical", href: "/companies/pharmaceutical-medical", icon: Globe, image: '/img/companies/medical.webp' },
-    { name: "Cosmetics & Beauty", href: "/companies/cosmetics-beauty", icon: Users, image: '/img/companies/cosmetics.webp' },
-    { name: "Tourism & Holiday", href: "/companies/tourism-holiday", icon: Globe, image: '/img/companies/tourism.webp' },
-    { name: "VIP Club", href: "/companies/vip-club", icon: Users, image: '/img/companies/vip-club.webp' },
-    { name: "Sport", href: "/companies/sport", icon: Users, image: '/img/companies/sport.webp' },
-    { name: "Properties & Real Estate", href: "/companies/properties-real-estate", icon: TrendingUp, image: '/img/companies/properties.webp' },
+    { name: "Development", href: "/companies/development", icon: Hammer, image: '/img/companies/development.webp' },
+    { name: "Media", href: "/companies/media", icon: Clapperboard, image: '/img/companies/media.webp' },
+    { name: "Fintech", href: "/companies/fintech", icon: Landmark, image: '/img/companies/fintech.webp' },
+    { name: "Project Management", href: "/companies/project-management", icon: LucideGanttChartSquare, image: '/img/companies/project-managment.webp' },
+    { name: "Trading", href: "/companies/trading", icon: CandlestickChart, image: '/img/companies/trading-2.webp' },
+    { name: "Pharmaceutical & Medical", href: "/companies/pharmaceutical-medical", icon: HeartPulse, image: '/img/companies/medical-2.webp' },
+    { name: "Cosmetics & Beauty", href: "/companies/cosmetics-beauty", icon: Apple, image: '/img/companies/cosmetics.webp' },
+    { name: "Tourism & Holiday", href: "/companies/tourism-holiday", icon: Plane, image: '/img/companies/tourism.webp' },
+    { name: "VIP Club", href: "/companies/vip-club", icon: Martini, image: '/img/companies/vip-club.webp' },
+    { name: "Sport", href: "/companies/sport", icon: Volleyball, image: '/img/companies/sport.webp' },
+    { name: "Properties & Real Estate", href: "/companies/properties-real-estate", icon: HousePlus, image: '/img/companies/properties-2.webp' },
   ]
 
   const strategies = [
@@ -140,36 +139,27 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {companies.map((company) => {
-              const IconComponent = company.icon
+              // const IconComponent = company.icon
               return (
                 <Link key={company.href} href={company.href}>
-                  <div className="--flip-card">
-                    <div className="flip-card-inner aspect-4/3">
-                      <div className="flip-card-front">
-                        <Card className="h-full hover:shadow-lg transition-all duration-300 hover:border-accent group relative aspect-4/3 ">
-                          {/* <img
-                            className="absolute object-cover inset-0 size-full z-0"
-                            src={company.image}
-                          /> */}
-                          <CardContent className="p-6 text-center z-1">
-                            <div className="w-16 h-16 mx-auto mb-4 bg-accent/10 rounded-full flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                              <IconComponent className="h-8 w-8 text-accent" />
-                            </div>
-                            <h3 className="font-semibold text-lg text-primary mb-2 group-hover:text-accent transition-colors">
-                              {company.name}
-                            </h3>
-                            <ArrowRight className="h-4 w-4 mx-auto text-muted-foreground group-hover:text-accent transition-colors" />
-                          </CardContent>
-                        </Card>
+                  <Card className="h-full hover:shadow-[0_0_15px_0px_oklab(0.6_0.01_0.08_/_0.8)] transition-all duration-300 hover:border-accent group relative overflow-clip py-0! gap-0!">
+                    <img
+                      className="object-cover top-0 start-0 m-auto z-0 transition-all size-full aspect-4/3"
+                      // style={{ maskImage: `radial-gradient(circle at bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%)` }}
+                      src={company.image}
+                    />
+                    {/* <CardContent className="p-6 text-center z-1 relative">
+                      <div className="size-20 mx-auto bg-accent/70 rounded-full flex items-center justify-center group-hover:opacity-100 opacity-10 transition duration-500 absolute inset-0 m-auto">
+                        <IconComponent className="size-10 text-gold-100" />
                       </div>
-                      {/* <div className="flip-card-back">
-                        <img
-                          className="absolute object-cover inset-0 size-full z-0"
-                          src={company.image}
-                        />
-                      </div> */}
-                    </div> 
-                  </div>
+                    </CardContent> */}
+                    <CardContent className="p-3 text-center z-1 bg-gold-lighter group-hover:bg-gold-lighter transition duration-500 shadow-[0_-10px_12px_-12px_oklab(0.6_0.01_0.08_/_0.6)]">
+                      <h3 className="font-semibold text-lg text-primary ---group-hover:text-accent transition-colors">
+                        {company.name}
+                        {/* <ArrowRight className="size-4 ms-2 text-muted-foreground group-hover:text-accent transition-colors inline absolute" /> */}
+                      </h3>
+                    </CardContent>
+                  </Card>
                 </Link>
               )
             })}
@@ -218,7 +208,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[image:url(/london-wide.jpg)] bg-fixed bg-cover absolute inset-0 -z-1 opacity-50"></div>
           <div className="text-center mb-16 z-1">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold golden-title mb-6 brightness-50">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold golden-title mb-6 brightness-90">
               High Standards in Global Investments
             </h2>
             <div className="max-w-4xl mx-auto">
