@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   abstract: meta.description,
   keywords: [
     'Rich Mind',
-    'Richmind',
+    'RichMind',
     'Investment',
     'Virtual Assets',
     'media',

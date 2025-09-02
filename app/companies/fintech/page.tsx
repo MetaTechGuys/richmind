@@ -42,7 +42,7 @@ export default function FintechPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="page-banner bg-[image:url(/img/companies/4-properties/cover.webp)] bg-primary/45">
+      <section className="page-banner bg-[image:url(/img/companies/)] bg-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white py-20">
             <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">Fintech</h1>
@@ -138,7 +138,7 @@ export default function FintechPage() {
             <CardContent className="p-12 text-center">
               <h3 className="font-serif text-2xl font-bold text-primary mb-6">Join Our Movement</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Richmind Fintech is paving the way for a borderless financial future—where trust, access, and growth
+                RichMind Fintech is paving the way for a borderless financial future—where trust, access, and growth
                 belong to everyone.
               </p>
             </CardContent>

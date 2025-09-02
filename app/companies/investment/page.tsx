@@ -47,7 +47,7 @@ export default function InvestmentPage() {
           <div className="text-center text-white py-20">
             <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">Investment</h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
-              At Richmind Investment, we see capital not as a number but as a force of transformation. We channel
+              At RichMind Investment, we see capital, not as a number, but as a force of transformation. We channel
               resources into ventures that push boundaries, shape economies, and open new doors to global prosperity.
             </p>
             <Link href="/contacts" target="_blank" className="contents">
@@ -153,7 +153,7 @@ export default function InvestmentPage() {
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
               From due diligence to portfolio growth, every stage is backed by rigorous research, transparent
               communication, and dynamic strategy execution. Our teams bring together global reach with local expertise
-              to maximize impact.
+              to maximise impact.
             </p>
           </div>
 
@@ -161,7 +161,7 @@ export default function InvestmentPage() {
             <CardContent className="p-12 text-center">
               <h3 className="font-serif text-2xl font-bold text-primary mb-6">Join Our Movement</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Partner with Richmind Investment to grow capital where innovation meets sustainability. With us,
+                Partner with RichMind Investment to grow capital where innovation meets sustainability. With us,
                 investment becomes more than profit—it becomes a legacy of progress.
               </p>
             </CardContent>

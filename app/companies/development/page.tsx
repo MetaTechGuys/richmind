@@ -59,11 +59,10 @@ export default function DevelopmentPage() {
             <h2 className="font-serif text-4xl font-bold golden-title mb-8">Our Development Philosophy</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               At RICHMIND Development, we believe in creating sustainable solutions that stand the test of time. Our
-              approach combines innovative design with practical functionality, ensuring every project delivers maximum
-              value while respecting environmental and social considerations.
+              approach combines innovative design with practical functionality, ensuring every project delivers maximum value, while respecting environmental and social considerations.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              We focus on developing infrastructure, commercial spaces, and residential projects that enhance
+              We focus on developing infrastructure, commercial spaces and residential projects that enhance
               communities and drive economic growth. Our commitment to excellence is reflected in every aspect of our
               development process, from initial planning to final delivery.
             </p>

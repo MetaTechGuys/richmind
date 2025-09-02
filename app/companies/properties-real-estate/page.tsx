@@ -77,7 +77,7 @@ export default function PropertiesRealEstatePage() {
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl font-bold golden-title mb-6">Real Estate Services</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Comprehensive real estate solutions designed to maximize investment potential and property value.
+              Comprehensive real estate solutions designed to maximise investment potential and property value.
             </p>
           </div>
 

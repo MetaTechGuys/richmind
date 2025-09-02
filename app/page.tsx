@@ -58,10 +58,10 @@ export default function HomePage() {
       icon: Lightbulb,
       title: "Innovation",
       description:
-        "Leading the charge in developing new technologies and methodologies. We empower our teams to deliver high quality results with the most advanced resources available.",
+        "Leading the charge in developing new technologies and methodologies. We empower our teams to deliver high-quality results with the most advanced resources available.",
       points: [
         "Advancing with future tech",
-        "Utilizing cutting-edge tools",
+        "Utilising cutting-edge tools",
         "Progress through constant improvement",
         "Crafting a creative legacy",
       ],
@@ -70,7 +70,7 @@ export default function HomePage() {
       icon: Handshake,
       title: "Collaboration",
       description:
-        "Real collaboration results in a stronger, more cohesive organization. Collaboration is vital for achieving long lasting achievements. We value individual contributions.",
+        "Real collaboration results in a stronger, more cohesive organisation. Collaboration is vital for achieving long-lasting achievements. We value individual contributions.",
       points: [
         "Succeeding together",
         "Building strong partnerships",
@@ -113,10 +113,12 @@ export default function HomePage() {
             alt="Richmin Holding"
             className="w-full object-center object-contain h-50"
           />
-          <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6">Global reach, local expertise</h1>
+          <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6">
+            <span className="text-nowrap">Global reach,</span>{' '}
+            <span className="text-nowrap">local expertise</span>
+            </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">
-            Our mission is to use operational expertise and strategic investments to promote innovation, sustainability,
-            and brilliance, reaffirming our ongoing mission to do worldwide community service.
+            Our mission is to use operational expertise and strategic investments to promote innovation, sustainability, and brilliance. We are committed to providing worldwide community service.
           </p>
           <ScrollInviter className="mt-40 select-nones [animation-duration:2000ms] " href="#companies" />
         </div>

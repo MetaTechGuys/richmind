@@ -11,7 +11,7 @@ export default function TradingPage() {
       icon: TrendingUp,
       title: "Advanced Trading Strategies",
       description:
-        "Sophisticated trading algorithms and strategies designed to maximize returns while managing risk across diverse markets.",
+        "Sophisticated trading algorithms and strategies designed to maximise returns while managing risk across diverse markets.",
     },
     {
       icon: Shield,

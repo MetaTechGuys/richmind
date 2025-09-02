@@ -38,7 +38,10 @@ export function Footer() {
               </svg>
             </div>
             <p className="text-primary-foreground/80 mt-4 sm:mb-6 max-w-md text-center">
-              Global reach, local expertise. Our mission is to use operational expertise and strategic investments to
+              <strong className="block text-center">
+                Global reach, local expertise.
+              </strong>
+               Our mission is to use operational expertise and strategic investments to
               promote innovation, sustainability, and brilliance.
             </p>
 
@@ -77,7 +80,7 @@ export function Footer() {
               <li className="flex items-center gap-1 text-xs">
                 <MapPin name="map-pin" className="size-4" />
                 <span className="truncate">
-                  207 Regent Street.London W1B 3HH, United Kingdom (Main)
+                  207 Regent Street. London W1B 3HH, United Kingdom (Main)
                 </span>
               </li>
               <li className="flex items-center gap-1 text-xs">
