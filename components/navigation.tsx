@@ -7,18 +7,18 @@ import { Menu, X } from "lucide-react"
 import useScrollPosition from "@/lib/scroll"
 
 export const activitiesData = [
-  { name: "Investment", href: "/companies/investment" },
-  { name: "Development", href: "/companies/development" },
-  { name: "Media", href: "/companies/media" },
-  { name: "Fintech", href: "/companies/fintech" },
-  { name: "Project Management", href: "/companies/project-management" },
-  { name: "Trading", href: "/companies/trading" },
-  { name: "Pharmaceutical & Medical", href: "/companies/pharmaceutical-medical" },
-  { name: "Cosmetics & Beauty", href: "/companies/cosmetics-beauty" },
-  { name: "Tourism & Holiday", href: "/companies/tourism-holiday" },
-  { name: "VIP Club", href: "/companies/vip-club" },
-  { name: "Sport", href: "/companies/sport" },
-  { name: "Properties & Real Estate", href: "/companies/properties-real-estate" },
+  { name: "Investment", href: "/activities/investment" },
+  { name: "Development", href: "/activities/development" },
+  { name: "Media", href: "/activities/media" },
+  { name: "Fintech", href: "/activities/fintech" },
+  { name: "Project Management", href: "/activities/project-management" },
+  { name: "Trading", href: "/activities/trading" },
+  { name: "Pharmaceutical & Medical", href: "/activities/pharmaceutical-medical" },
+  { name: "Cosmetics & Beauty", href: "/activities/cosmetics-beauty" },
+  { name: "Tourism & Holiday", href: "/activities/tourism-holiday" },
+  { name: "VIP Club", href: "/activities/vip-club" },
+  { name: "Sport", href: "/activities/sport" },
+  { name: "Properties & Real Estate", href: "/activities/properties-real-estate" },
 ]
 
 export function Navigation({ autohide }: { autohide?: boolean }) {

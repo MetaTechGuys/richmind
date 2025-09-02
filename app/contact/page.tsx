@@ -4,15 +4,15 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { Phone, Mail, Clock } from "lucide-react"
 
 export default function ContactPage() {
   const contactInfo = [
-    {
-      icon: MapPin,
-      title: "Headquarter",
-      details: ["207 Regent Street. London W1B 3HH, United Kingdom"],
-    },
+    // {
+    //   icon: MapPin,
+    //   title: "Headquarter",
+    //   details: ["207 Regent Street. London W1B 3HH, United Kingdom"],
+    // },
     {
       icon: Phone,
       title: "Phone",
