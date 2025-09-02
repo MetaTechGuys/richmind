@@ -41,7 +41,7 @@ export default function HomePage() {
   const companies = [
     { name: "Investment", href: "/activities/investment", icon: TrendingUp, image: '/img/companies/investment.webp' },
     { name: "Development", href: "/activities/development", icon: Hammer, image: '/img/companies/development-2.webp' },
-    { name: "Media", href: "/activities/media", icon: Clapperboard, image: '/img/companies/media.webp' },
+    { name: "Media", href: "/activities/media", icon: Clapperboard, image: '/img/companies/media-2.webp' },
     { name: "Fintech", href: "/activities/fintech", icon: Landmark, image: '/img/companies/fintech.webp' },
     { name: "Project Management", href: "/activities/project-management", icon: LucideGanttChartSquare, image: '/img/companies/project-managment.webp' },
     { name: "Trading", href: "/activities/trading", icon: CandlestickChart, image: '/img/companies/trading-2.webp' },
@@ -177,8 +177,8 @@ export default function HomePage() {
             <h2 className="font-serif text-2xl font-bold golden-title mb-6">Recent Project</h2>
               <Card className="p-0! h-full hover:shadow-[0_0_15px_0px_oklab(0.6_0.01_0.08_/_0.8)] transition-all duration-300 hover:border-accent group relative overflow-clip gap-0!">
                 <CardContent className="p-0! text-center z-1 bg-gold-lighter group-hover:bg-gold-lighter transition duration-500 shadow-[0_-10px_12px_-12px_oklab(0.6_0.01_0.08_/_0.6)]">
-                  <video className="aspect-video -my-1" muted autoPlay controls >
-                    <source src="/videos/oystra.webm" />
+                  <video className="aspect-video -my-1" muted autoPlay controls preload="metadata" poster="/videos/oystra-poster.webp">
+                    <source src="/videos/oystra.webm"/>
                   </video>
                 </CardContent>
               </Card>
