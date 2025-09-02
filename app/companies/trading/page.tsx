@@ -41,8 +41,8 @@ export default function TradingPage() {
       <section className="page-banner bg-[image:url(/img/companies/12-trading/cover.webp)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white py-20">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">Trading</h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <h1 className="font-serif text-3xl font-bold mb-6">Trading</h1>
+            <p className="text-lg md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
               Leveraging advanced trading strategies and cutting-edge technology to deliver superior returns in global
               financial markets.
             </p>
@@ -61,7 +61,7 @@ export default function TradingPage() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl font-bold golden-title mb-8">Our Trading Philosophy</h2>
+            <h2 className="font-serif text-2xl font-bold golden-title mb-8">Our Trading Philosophy</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               RICHMIND Trading operates on the principle that successful trading requires a perfect balance of
               analytical rigor, technological innovation, and disciplined risk management. Our approach combines
@@ -81,7 +81,7 @@ export default function TradingPage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl font-bold golden-title mb-6">Trading Capabilities</h2>
+            <h2 className="font-serif text-2xl font-bold golden-title mb-6">Trading Capabilities</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Comprehensive trading solutions powered by advanced technology and expert market knowledge.
             </p>
@@ -96,7 +96,7 @@ export default function TradingPage() {
                     <div className="w-16 h-16 mb-6 bg-accent/10 flex items-center justify-center">
                       <IconComponent className="h-8 w-8 text-accent" />
                     </div>
-                    <h3 className="font-serif text-2xl font-bold text-primary mb-4">{feature.title}</h3>
+                    <h3 className="font-serif text-xl font-bold text-primary mb-4">{feature.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
                   </CardContent>
                 </Card>
@@ -109,7 +109,7 @@ export default function TradingPage() {
       {/* CTA Section */}
       <section className="py-20 bg-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-4xl font-bold text-white mb-6">Ready to Trade with Confidence?</h2>
+          <h2 className="font-serif text-2xl font-bold text-white mb-6">Ready to Trade with Confidence?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Partner with RICHMIND Trading to access sophisticated trading strategies and global market opportunities.
           </p>

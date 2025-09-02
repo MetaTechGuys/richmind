@@ -19,8 +19,8 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-b from-muted/30 to-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h1 className="font-serif text-4xl md:text-6xl font-bold golden-title mb-6">About RICHMIND Holding</h1>
+          <div className="text-center my-16">
+            <h1 className="font-serif text-3xl font-bold golden-title mb-6">About RICHMIND Holding</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               A legacy of excellence, innovation, and sustainable growth across diverse industries worldwide.
             </p>
@@ -35,7 +35,7 @@ export default function AboutPage() {
                     <div className="w-12 h-12 mx-auto mb-4 bg-accent/10 rounded-full flex items-center justify-center">
                       <IconComponent className="h-6 w-6 text-accent" />
                     </div>
-                    <div className="font-serif text-3xl font-bold text-primary mb-2">{stat.value}</div>
+                    <div className="font-serif text-2xl font-bold text-primary mb-2">{stat.value}</div>
                     <div className="text-sm text-muted-foreground">{stat.label}</div>
                   </CardContent>
                 </Card>
@@ -50,7 +50,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-serif text-3xl md:text-4xl font-bold golden-title mb-6">Our Mission</h2>
+              <h2 className="font-serif text-2xl font-bold golden-title mb-6">Our Mission</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 At RICHMIND Holding, our mission is to use operational expertise and strategic investments to promote
                 innovation, sustainability, and brilliance, reaffirming our ongoing commitment to worldwide community
@@ -80,7 +80,7 @@ export default function AboutPage() {
         <div className="bg-[image:url(/london-wide.jpg)] bg-fixed bg-cover absolute inset-0 -z-1 bg-primary/45 bg-blend-overlay"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-6">Our Core Values</h2>
+            <h2 className="font-serif text-2xl font-bold text-white mb-6">Our Core Values</h2>
             <p className="text-lg max-w-3xl mx-auto text-white/90">
               The principles that guide every decision and drive our success across all ventures.
             </p>
@@ -92,7 +92,7 @@ export default function AboutPage() {
                 <div className="w-16 h-16 mx-auto mb-6 bg-accent/10 rounded-full flex items-center justify-center">
                   <TrendingUp className="h-8 w-8 text-accent" />
                 </div>
-                <h3 className="font-serif text-xl font-bold text-primary mb-4">Excellence</h3>
+                <h3 className="font-serif text-lg font-bold text-primary mb-4">Excellence</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   We strive for excellence in everything we do, setting the highest standards for quality, performance,
                   and results across all our portfolio companies.

@@ -45,8 +45,8 @@ export default function InvestmentPage() {
       <section className="page-banner bg-[image:url(/img/companies/1-investment/cover.webp)] bg-primary/25">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-shadow-lg">
           <div className="text-center text-white py-20">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">Investment</h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <h1 className="font-serif text-3xl font-bold mb-6">Investment</h1>
+            <p className="text-lg md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
               At RichMind Investment, we see capital, not as a number, but as a force of transformation. We channel
               resources into ventures that push boundaries, shape economies, and open new doors to global prosperity.
             </p>
@@ -87,7 +87,7 @@ export default function InvestmentPage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold golden-title mb-6">
+            <h2 className="font-serif text-2xl font-bold golden-title mb-6">
               Our Philosophy: Growth with Responsibility
             </h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
@@ -131,7 +131,7 @@ export default function InvestmentPage() {
               />
             </div>
             <div className="lg:col-span-2">
-              <h2 className="font-serif text-3xl md:text-4xl font-bold golden-title mb-6">Core Areas</h2>
+              <h2 className="font-serif text-2xl font-bold golden-title mb-6">Core Areas</h2>
               <div className="space-y-4">
                 {coreAreas.map((area, index) => (
                   <div key={index} className="flex items-start space-x-3">
@@ -149,7 +149,7 @@ export default function InvestmentPage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold golden-title mb-6">How We Work</h2>
+            <h2 className="font-serif text-2xl font-bold golden-title mb-6">How We Work</h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
               From due diligence to portfolio growth, every stage is backed by rigorous research, transparent
               communication, and dynamic strategy execution. Our teams bring together global reach with local expertise

@@ -45,8 +45,8 @@ export default function FintechPage() {
       <section className="page-banner bg-[image:url(/img/companies/2-fintech/cover.webp)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white py-20 glass bg-primary/30 rounded-2xl px-8">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">Fintech</h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed text-shadow-2xs">
+            <h1 className="font-serif text-3xl font-bold mb-6">Fintech</h1>
+            <p className="text-lg md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed text-shadow-2xs">
               The Fintech division is where technology and finance converge to reimagine the way the world transacts,
               invests, and saves. We build digital infrastructures that democratize financial services, reduce
               inefficiencies, and empower individuals and enterprises alike.
@@ -65,7 +65,7 @@ export default function FintechPage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold golden-title mb-6">
+            <h2 className="font-serif text-2xl font-bold golden-title mb-6">
               Our Philosophy: Finance for All
             </h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
@@ -108,7 +108,7 @@ export default function FintechPage() {
               />
             </div>
             <div>
-              <h2 className="font-serif text-3xl md:text-4xl font-bold golden-title mb-6">Core Offerings</h2>
+              <h2 className="font-serif text-2xl font-bold golden-title mb-6">Core Offerings</h2>
               <div className="space-y-4">
                 {offerings.map((offering, index) => (
                   <div key={index} className="flex items-start space-x-3">
@@ -126,7 +126,7 @@ export default function FintechPage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold golden-title mb-6">How We Work</h2>
+            <h2 className="font-serif text-2xl font-bold golden-title mb-6">How We Work</h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
               By integrating advanced technologies with human-centered design, we deliver fintech solutions that are
               secure, scalable, and impactful. Our ecosystem bridges traditional finance and next-generation digital

@@ -41,8 +41,8 @@ export default function ProjectManagementPage() {
       <section className="page-banner bg-[image:url(/img/companies/5-projectmanagment/cover.webp)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white py-20">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">Project Management</h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <h1 className="font-serif text-3xl font-bold mb-6">Project Management</h1>
+            <p className="text-lg md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
               Delivering excellence through strategic project management, ensuring every initiative achieves its
               objectives efficiently and effectively.
             </p>
@@ -60,7 +60,7 @@ export default function ProjectManagementPage() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl font-bold golden-title mb-8">Our Project Management Philosophy</h2>
+            <h2 className="font-serif text-2xl font-bold golden-title mb-8">Our Project Management Philosophy</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               RICHMIND Project Management combines proven methodologies with innovative approaches to deliver
               exceptional results. We believe that successful project management is built on clear communication,
@@ -79,7 +79,7 @@ export default function ProjectManagementPage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl font-bold golden-title mb-6">Core Management Services</h2>
+            <h2 className="font-serif text-2xl font-bold golden-title mb-6">Core Management Services</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Comprehensive project management solutions designed to optimize efficiency and ensure successful project
               delivery.
@@ -95,7 +95,7 @@ export default function ProjectManagementPage() {
                     <div className="w-16 h-16 mb-6 bg-accent/10 flex items-center justify-center">
                       <IconComponent className="h-8 w-8 text-accent" />
                     </div>
-                    <h3 className="font-serif text-2xl font-bold text-primary mb-4">{feature.title}</h3>
+                    <h3 className="font-serif text-xl font-bold text-primary mb-4">{feature.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
                   </CardContent>
                 </Card>
@@ -108,7 +108,7 @@ export default function ProjectManagementPage() {
       {/* CTA Section */}
       <section className="py-20 bg-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-4xl font-bold text-white mb-6">Ready to Optimize Your Projects?</h2>
+          <h2 className="font-serif text-2xl font-bold text-white mb-6">Ready to Optimize Your Projects?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Partner with RICHMIND Project Management to ensure your initiatives are delivered successfully and
             efficiently.

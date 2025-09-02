@@ -6,28 +6,29 @@ import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import useScrollPosition from "@/lib/scroll"
 
+export const activitiesData = [
+  { name: "Investment", href: "/companies/investment" },
+  { name: "Development", href: "/companies/development" },
+  { name: "Media", href: "/companies/media" },
+  { name: "Fintech", href: "/companies/fintech" },
+  { name: "Project Management", href: "/companies/project-management" },
+  { name: "Trading", href: "/companies/trading" },
+  { name: "Pharmaceutical & Medical", href: "/companies/pharmaceutical-medical" },
+  { name: "Cosmetics & Beauty", href: "/companies/cosmetics-beauty" },
+  { name: "Tourism & Holiday", href: "/companies/tourism-holiday" },
+  { name: "VIP Club", href: "/companies/vip-club" },
+  { name: "Sport", href: "/companies/sport" },
+  { name: "Properties & Real Estate", href: "/companies/properties-real-estate" },
+]
+
 export function Navigation({ autohide }: { autohide?: boolean }) {
   const [isOpen, setIsOpen] = useState(false)
 
-  const companies = [
-    { name: "Investment", href: "/companies/investment" },
-    { name: "Development", href: "/companies/development" },
-    { name: "Media", href: "/companies/media" },
-    { name: "Fintech", href: "/companies/fintech" },
-    { name: "Project Management", href: "/companies/project-management" },
-    { name: "Trading", href: "/companies/trading" },
-    { name: "Pharmaceutical & Medical", href: "/companies/pharmaceutical-medical" },
-    { name: "Cosmetics & Beauty", href: "/companies/cosmetics-beauty" },
-    { name: "Tourism & Holiday", href: "/companies/tourism-holiday" },
-    { name: "VIP Club", href: "/companies/vip-club" },
-    { name: "Sport", href: "/companies/sport" },
-    { name: "Properties & Real Estate", href: "/companies/properties-real-estate" },
-  ]
 
   const y = useScrollPosition()
 
   return (
-    <header className="fixed w-full z-50 group/header h-16">
+    <header className="fixed w-full z-50 group/header h-16 top-0">
       <nav className="w-full bg-background/35 hover:bg-background hover:shadow backdrop-blur-sm border-b border-primary/20 glass transition-all duration-500 group-hover/header:top-0! pointer-coarse:top-0! pointer-coarse:bg-background! relative" style={{ top: y > 10 ? 0 : autohide ? -80 : 0}}>
         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 max-sm:px-4">
@@ -43,10 +44,10 @@ export function Navigation({ autohide }: { autohide?: boolean }) {
                 Home
               </Link>
               <div className="relative group">
-                <button className="text-foreground hover:text-accent transition-colors">Companies</button>
+                <button className="text-foreground hover:text-accent transition-colors">Activities</button>
                 <div className="absolute top-full left-0 mt-2 w-64 bg-card border border-accent/20 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                   <div className="p-2">
-                    {companies.map((company) => (
+                    {activitiesData.map((company) => (
                       <Link
                         key={company.href}
                         href={company.href}
@@ -58,6 +59,9 @@ export function Navigation({ autohide }: { autohide?: boolean }) {
                   </div>
                 </div>
               </div>
+              <Link href="/vision" className="text-foreground hover:text-accent transition-colors">
+                Vision
+              </Link>
               <Link href="/about" className="text-foreground hover:text-accent transition-colors">
                 About Us
               </Link>
@@ -86,9 +90,9 @@ export function Navigation({ autohide }: { autohide?: boolean }) {
                   Home
                 </Link>
                 <div className="px-3 py-2">
-                  <div className="text-sm font-medium text-muted-foreground mb-2">Companies</div>
+                  <div className="text-sm font-medium text-muted-foreground mb-2">Activities</div>
                   <div className="space-y-1 pl-4">
-                    {companies.map((company) => (
+                    {activitiesData.map((company) => (
                       <Link
                         key={company.href}
                         href={company.href}
@@ -100,6 +104,13 @@ export function Navigation({ autohide }: { autohide?: boolean }) {
                     ))}
                   </div>
                 </div>
+                <Link
+                  href="/vision"
+                  className="block px-3 py-2 text-foreground hover:text-accent transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Vision
+                </Link>
                 <Link
                   href="/about"
                   className="block px-3 py-2 text-foreground hover:text-accent transition-colors"

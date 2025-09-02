@@ -1,23 +1,23 @@
 import Link from "next/link"
 // import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
-import { MapPin, Globe, Phone } from "lucide-react"
+import { MapPin, Mail, Phone } from "lucide-react"
 import pckg from '@/package.json';
 import Image from "next/image";
 
 export function Footer() {
   const companies = [
-    { name: "Investment", href: "/companies/investment" },
-    { name: "Development", href: "/companies/development" },
-    { name: "Media", href: "/companies/media" },
-    { name: "Fintech", href: "/companies/fintech" },
-    { name: "VIP Club", href: "/companies/vip-club" },
-    { name: "Trading", href: "/companies/trading" },
-    { name: "Sport", href: "/companies/sport" },
-    { name: "Cosmetics & Beauty", href: "/companies/cosmetics-beauty" },
-    { name: "Pharmaceutical & Medical", href: "/companies/pharmaceutical-medical" },
-    { name: "Tourism & Holiday", href: "/companies/tourism-holiday" },
-    { name: "Project Management", href: "/companies/project-management" },
-    { name: "Properties & Real Estate", href: "/companies/properties-real-estate" },
+    { name: "Investment", href: "/activities/investment" },
+    { name: "Development", href: "/activities/development" },
+    { name: "Media", href: "/activities/media" },
+    { name: "Fintech", href: "/activities/fintech" },
+    { name: "VIP Club", href: "/activities/vip-club" },
+    { name: "Trading", href: "/activities/trading" },
+    { name: "Sport", href: "/activities/sport" },
+    { name: "Cosmetics & Beauty", href: "/activities/cosmetics-beauty" },
+    { name: "Pharmaceutical & Medical", href: "/activities/pharmaceutical-medical" },
+    { name: "Tourism & Holiday", href: "/activities/tourism-holiday" },
+    { name: "Project Management", href: "/activities/project-management" },
+    { name: "Properties & Real Estate", href: "/activities/properties-real-estate" },
   ]
 
   return (
@@ -80,8 +80,16 @@ export function Footer() {
               <li className="flex items-center gap-1 text-xs">
                 <MapPin name="map-pin" className="size-4" />
                 <span className="truncate">
-                  207 Regent Street. London W1B 3HH, United Kingdom (Main)
+                  207 Regent Street. London W1B 3HH, United Kingdom
                 </span>
+              </li>
+              <li className="flex items-center gap-1 text-xs">
+                <Phone name="map-pin" className="size-4" />
+                <span>+44 20 76 92 56 76</span>
+              </li>
+              <li className="flex items-center gap-1 text-xs">
+                <Mail name="map-pin" className="size-4" />
+                <span className="truncate">Info@RichMindHolding.com</span>
               </li>
               <li className="flex items-center gap-1 text-xs">
                 <MapPin name="map-pin" className="size-4" />
@@ -90,18 +98,18 @@ export function Footer() {
                 </span>
               </li>
               <li className="flex items-center gap-1 text-xs">
-                <Globe name="map-pin" className="size-4" />
-                <span className="truncate">Info@RichMindHolding.com</span>
+                <Phone name="map-pin" className="size-4" />
+                <span>+971 4 283 2333</span>
               </li>
               <li className="flex items-center gap-1 text-xs">
-                <Phone name="map-pin" className="size-4" />
-                <span>+44 20 76 92 56 76</span>
+                <Mail name="map-pin" className="size-4" />
+                <span className="truncate">info@richmind.com</span>
               </li>
             </ul>
           </div>
 
           <div className="md:justify-self-start text-nowrap w-min max-lg:hidden">
-            <h4 className="font-semibold mb-4">Our Companies</h4>
+            <h4 className="font-semibold mb-4">Activities</h4>
             <ul className="space-y-2">
               {companies.slice(0, 7).map((company) => (
                 <li key={company.href}>

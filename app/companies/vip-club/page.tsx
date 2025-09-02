@@ -39,8 +39,8 @@ export default function VipClubPage() {
       <section className="page-banner bg-[image:url(/img/companies/9-vipclub/cover.webp)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white py-20">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">VIP Club</h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <h1 className="font-serif text-3xl font-bold mb-6">VIP Club</h1>
+            <p className="text-lg md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
               An exclusive community for distinguished individuals seeking premium experiences, networking
               opportunities, and luxury lifestyle benefits.
             </p>
@@ -59,7 +59,7 @@ export default function VipClubPage() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl font-bold golden-title mb-8">Exclusive Membership Experience</h2>
+            <h2 className="font-serif text-2xl font-bold golden-title mb-8">Exclusive Membership Experience</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               RICHMIND VIP Club is an exclusive community designed for discerning individuals who appreciate the finest
               things in life. Our members enjoy access to unique experiences, premium services, and a network of
@@ -78,7 +78,7 @@ export default function VipClubPage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl font-bold golden-title mb-6">Membership Benefits</h2>
+            <h2 className="font-serif text-2xl font-bold golden-title mb-6">Membership Benefits</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Exclusive privileges and premium services designed for our distinguished VIP Club members.
             </p>
@@ -93,7 +93,7 @@ export default function VipClubPage() {
                     <div className="w-16 h-16 mb-6 bg-accent/10 flex items-center justify-center">
                       <IconComponent className="h-8 w-8 text-accent" />
                     </div>
-                    <h3 className="font-serif text-2xl font-bold text-primary mb-4">{feature.title}</h3>
+                    <h3 className="font-serif text-xl font-bold text-primary mb-4">{feature.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
                   </CardContent>
                 </Card>
@@ -106,7 +106,7 @@ export default function VipClubPage() {
       {/* CTA Section */}
       <section className="py-20 bg-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-4xl font-bold text-white mb-6">Ready to Join Our Elite Community?</h2>
+          <h2 className="font-serif text-2xl font-bold text-white mb-6">Ready to Join Our Elite Community?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Experience the pinnacle of luxury and exclusivity with RICHMIND VIP Club membership.
           </p>

@@ -10,18 +10,18 @@ export default function ContactPage() {
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Headquarters",
-      details: ["123 Business District", "Global Financial Center", "New York, NY 10001"],
+      title: "Headquarter",
+      details: ["207 Regent Street. London W1B 3HH, United Kingdom"],
     },
     {
       icon: Phone,
       title: "Phone",
-      details: ["+1 (555) 123-4567", "+1 (555) 987-6543"],
+      details: ["+44 20 76 92 56 76"],
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@richmind.com", "investors@richmind.com"],
+      details: ["Info@RichMindHolding.com"],
     },
     {
       icon: Clock,
@@ -38,7 +38,7 @@ export default function ContactPage() {
       <section className="pt-24 pb-4 bg-gradient-to-b from-muted/30 to-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="font-serif text-4xl md:text-6xl font-bold golden-title mb-6">Contact Us</h1>
+            <h1 className="font-serif text-3xl font-bold golden-title my-6">Contact Us</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Get in touch with our team to explore partnership opportunities and learn more about our global
               operations.
@@ -54,7 +54,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <Card className="border-accent/20">
               <CardHeader>
-                <CardTitle className="font-serif text-2xl text-primary">Send us a Message</CardTitle>
+                <CardTitle className="font-serif text-2xl text-primary">Contact Us</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -81,7 +81,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">Message</label>
-                  <Textarea placeholder="Tell us more about your inquiry..." className="min-h-[230px]" />
+                  <Textarea placeholder="Tell us more about your inquiry..." className="min-h-[130px]" />
                 </div>
                 <Button className="w-full bg-primary hover:bg-primary/90">Send Message</Button>
               </CardContent>
@@ -90,7 +90,7 @@ export default function ContactPage() {
             {/* Contact Information */}
             <div className="space-y-6">
               <div>
-                <h2 className="font-serif text-3xl font-bold golden-title mb-6">Get in Touch</h2>
+                <h2 className="font-serif text-2xl font-bold golden-title mb-6">Get in Touch</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   We&apos;re here to answer your questions and discuss how RICHMIND Holding can support your business
                   objectives. Reach out to us through any of the channels below.

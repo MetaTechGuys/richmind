@@ -39,18 +39,18 @@ const points: IPoint[] = [
 export default function HomePage() {
   const showClickMap = useBoolean();
   const companies = [
-    { name: "Investment", href: "/companies/investment", icon: TrendingUp, image: '/img/companies/investment.webp' },
-    { name: "Development", href: "/companies/development", icon: Hammer, image: '/img/companies/development.webp' },
-    { name: "Media", href: "/companies/media", icon: Clapperboard, image: '/img/companies/media.webp' },
-    { name: "Fintech", href: "/companies/fintech", icon: Landmark, image: '/img/companies/fintech.webp' },
-    { name: "Project Management", href: "/companies/project-management", icon: LucideGanttChartSquare, image: '/img/companies/project-managment.webp' },
-    { name: "Trading", href: "/companies/trading", icon: CandlestickChart, image: '/img/companies/trading-2.webp' },
-    { name: "Pharmaceutical & Medical", href: "/companies/pharmaceutical-medical", icon: HeartPulse, image: '/img/companies/medical-2.webp' },
-    { name: "Cosmetics & Beauty", href: "/companies/cosmetics-beauty", icon: Apple, image: '/img/companies/cosmetics.webp' },
-    { name: "Tourism & Holiday", href: "/companies/tourism-holiday", icon: Plane, image: '/img/companies/tourism.webp' },
-    { name: "VIP Club", href: "/companies/vip-club", icon: Martini, image: '/img/companies/vip-club.webp' },
-    { name: "Sport", href: "/companies/sport", icon: Volleyball, image: '/img/companies/sport.webp' },
-    { name: "Properties & Real Estate", href: "/companies/properties-real-estate", icon: HousePlus, image: '/img/companies/properties-2.webp' },
+    { name: "Investment", href: "/activities/investment", icon: TrendingUp, image: '/img/companies/investment.webp' },
+    { name: "Development", href: "/activities/development", icon: Hammer, image: '/img/companies/development-2.webp' },
+    { name: "Media", href: "/activities/media", icon: Clapperboard, image: '/img/companies/media.webp' },
+    { name: "Fintech", href: "/activities/fintech", icon: Landmark, image: '/img/companies/fintech.webp' },
+    { name: "Project Management", href: "/activities/project-management", icon: LucideGanttChartSquare, image: '/img/companies/project-managment.webp' },
+    { name: "Trading", href: "/activities/trading", icon: CandlestickChart, image: '/img/companies/trading-2.webp' },
+    { name: "Pharmaceutical & Medical", href: "/activities/pharmaceutical-medical", icon: HeartPulse, image: '/img/companies/medical-2.webp' },
+    { name: "Cosmetics & Beauty", href: "/activities/cosmetics-beauty", icon: Apple, image: '/img/companies/cosmetics.webp' },
+    { name: "Tourism & Holiday", href: "/activities/tourism-holiday", icon: Plane, image: '/img/companies/tourism.webp' },
+    { name: "VIP Club", href: "/activities/vip-club", icon: Martini, image: '/img/companies/vip-club-2.webp' },
+    { name: "Sport", href: "/activities/sport", icon: Volleyball, image: '/img/companies/sport.webp' },
+    { name: "Properties & Real Estate", href: "/activities/properties-real-estate", icon: HousePlus, image: '/img/companies/properties-3.webp' },
   ]
 
   const strategies = [
@@ -102,7 +102,7 @@ export default function HomePage() {
           <video autoPlay muted loop className="w-full h-full object-cover" poster="/videos/site-banner.webp" preload="metadata">
             <source src="/videos/site-banner.webm" type="video/webm" />
           </video>
-          <div className="absolute inset-0 bg-primary/60"></div>
+          {/* <div className="absolute inset-0 bg-primary/60"></div> */}
         </div>
 
         <div className="relative z-10 text-center text-white max-w-4xl m-auto px-4 pointer-coarse:mt-18!">
@@ -113,7 +113,7 @@ export default function HomePage() {
             alt="Richmin Holding"
             className="w-full object-center object-contain h-50"
           />
-          <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6">
+          <h1 className="font-serif text-3xl md:text-4xl font-bold mb-6">
             <span className="text-nowrap">Global reach,</span>{' '}
             <span className="text-nowrap">local expertise</span>
             </h1>
@@ -128,8 +128,8 @@ export default function HomePage() {
       <section id="companies" className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold golden-title mb-6">
-              RICHMIND Holding&apos;s Companies
+            <h2 className="font-serif text-2xl font-bold golden-title mb-2">
+              Activities
             </h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
               The portfolio of RICHMIND Holding is diverse, incorporating an extensive spectrum of industries, and it is
@@ -141,7 +141,7 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {companies.map((company) => {
-              const IconComponent = company.icon
+              // const IconComponent = company.icon
               return (
                 <Link key={company.href} href={company.href}>
                   <Card className="h-full hover:shadow-[0_0_15px_0px_oklab(0.6_0.01_0.08_/_0.8)] transition-all duration-300 hover:border-accent group relative overflow-clip py-0! gap-0!">
@@ -157,7 +157,7 @@ export default function HomePage() {
                       </div>
                     </CardContent> */}
                     <CardContent className="p-3 text-center z-1 bg-gold-lighter group-hover:bg-gold-lighter transition duration-500 shadow-[0_-10px_12px_-12px_oklab(0.6_0.01_0.08_/_0.6)]">
-                      <h3 className="font-semibold text-lg text-primary ---group-hover:text-accent transition-colors">
+                      <h3 className="font-semibold text-base text-primary ---group-hover:text-accent transition-colors">
                         {company.name}
                         {/* <ArrowRight className="size-4 ms-2 text-muted-foreground group-hover:text-accent transition-colors inline absolute" /> */}
                       </h3>
@@ -174,7 +174,23 @@ export default function HomePage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold golden-title mb-6">Global Presence</h2>
+            <h2 className="font-serif text-2xl font-bold golden-title mb-6">Recent Project</h2>
+              <Card className="p-0! h-full hover:shadow-[0_0_15px_0px_oklab(0.6_0.01_0.08_/_0.8)] transition-all duration-300 hover:border-accent group relative overflow-clip gap-0!">
+                <CardContent className="p-0! text-center z-1 bg-gold-lighter group-hover:bg-gold-lighter transition duration-500 shadow-[0_-10px_12px_-12px_oklab(0.6_0.01_0.08_/_0.6)]">
+                  <video className="aspect-video -my-1" muted autoPlay controls >
+                    <source src="/videos/oystra.webm" />
+                  </video>
+                </CardContent>
+              </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Branches Section - Placeholder */}
+      <section className="py-20 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="font-serif text-2xl font-bold golden-title mb-6">Global Network</h2>
             <div className="relative aspect-video">
               <Lottie
                 animationData={animationData}
@@ -211,7 +227,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[image:url(/london-wide.jpg)] bg-fixed bg-cover absolute inset-0 -z-1 opacity-50"></div>
           <div className="text-center mb-16 z-1">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 brightness-90">
+            <h2 className="font-serif text-2xl font-bold mb-6 brightness-90">
               High Standards in Global Investments
             </h2>
             <div className="max-w-4xl mx-auto">
@@ -222,13 +238,13 @@ export default function HomePage() {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
                 <div className="bg-card/80 p-6 rounded-lg border border-accent/20 glass">
-                  <h3 className="font-semibold text-xl text-primary mb-3">Strategic Investments in Key Sectors</h3>
+                  <h3 className="font-semibold text-lg text-primary mb-3">Strategic Investments in Key Sectors</h3>
                   <p className="text-foreground">
                     Focused allocation of resources to high-growth industries with proven expansion potential.
                   </p>
                 </div>
                 <div className="bg-card/80 p-6 rounded-lg border border-accent/20 glass">
-                  <h3 className="font-semibold text-xl text-primary mb-3">Sustainability and Innovation Engagement</h3>
+                  <h3 className="font-semibold text-lg text-primary mb-3">Sustainability and Innovation Engagement</h3>
                   <p className="text-foreground">
                     Commitment to sustainable practices while driving innovation across all our portfolio companies.
                   </p>
@@ -247,7 +263,7 @@ export default function HomePage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold golden-title mb-6">
+            <h2 className="font-serif text-2xl font-bold golden-title mb-6">
               The Three Pillars of RichMind Strategy
             </h2>
           </div>
@@ -261,7 +277,7 @@ export default function HomePage() {
                     <div className="w-16 h-16 mx-auto mb-6 bg-accent/10 rounded-full flex items-center justify-center">
                       <IconComponent className="h-8 w-8 text-accent" />
                     </div>
-                    <h3 className="font-serif text-2xl font-bold text-primary mb-4 text-center">{strategy.title}</h3>
+                    <h3 className="font-serif text-lg font-bold text-primary mb-4 text-center">{strategy.title}</h3>
                     <p className="text-muted-foreground mb-6 leading-relaxed">{strategy.description}</p>
                     <ul className="space-y-2">
                       {strategy.points.map((point, index) => (

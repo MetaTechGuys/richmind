@@ -40,8 +40,8 @@ export default function TourismHolidayPage() {
       <section className="page-banner bg-[image:url(/img/companies/7-holiday/cover.webp)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white py-20">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">Tourism & Holiday</h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <h1 className="font-serif text-3xl font-bold mb-6">Tourism & Holiday</h1>
+            <p className="text-lg md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
               Creating extraordinary travel experiences and luxury holidays that inspire, rejuvenate, and create lasting
               memories.
             </p>
@@ -60,7 +60,7 @@ export default function TourismHolidayPage() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl font-bold golden-title mb-8">Our Travel Philosophy</h2>
+            <h2 className="font-serif text-2xl font-bold golden-title mb-8">Our Travel Philosophy</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               RICHMIND Tourism & Holiday believes that travel is more than just visiting new places—it&apos;s about creating
               transformative experiences that enrich the soul and broaden perspectives. We curate exceptional journeys
@@ -79,7 +79,7 @@ export default function TourismHolidayPage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl font-bold golden-title mb-6">Travel Services</h2>
+            <h2 className="font-serif text-2xl font-bold golden-title mb-6">Travel Services</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Comprehensive luxury travel services designed to create extraordinary holiday experiences and
               unforgettable journeys.
@@ -95,7 +95,7 @@ export default function TourismHolidayPage() {
                     <div className="w-16 h-16 mb-6 bg-accent/10 flex items-center justify-center">
                       <IconComponent className="h-8 w-8 text-accent" />
                     </div>
-                    <h3 className="font-serif text-2xl font-bold text-primary mb-4">{feature.title}</h3>
+                    <h3 className="font-serif text-xl font-bold text-primary mb-4">{feature.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
                   </CardContent>
                 </Card>
@@ -108,7 +108,7 @@ export default function TourismHolidayPage() {
       {/* CTA Section */}
       <section className="py-20 bg-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-4xl font-bold text-white mb-6">Ready for Your Next Adventure?</h2>
+          <h2 className="font-serif text-2xl font-bold text-white mb-6">Ready for Your Next Adventure?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Let RICHMIND Tourism & Holiday create an extraordinary travel experience tailored just for you.
           </p>

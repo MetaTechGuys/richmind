@@ -40,8 +40,8 @@ export default function MediaPage() {
       <section className="page-banner bg-[image:url(/img/companies/3-media/cover.webp)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white py-20">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">Media</h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <h1 className="font-serif text-3xl font-bold mb-6">Media</h1>
+            <p className="text-lg md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
               Crafting compelling narratives and delivering impactful media solutions that connect brands with their
               audiences across all platforms.
             </p>
@@ -59,7 +59,7 @@ export default function MediaPage() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl font-bold golden-title mb-8">Our Media Philosophy</h2>
+            <h2 className="font-serif text-2xl font-bold golden-title mb-8">Our Media Philosophy</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               RICHMIND Media believes in the power of storytelling to inspire, inform, and transform. We create content
               that resonates with audiences while maintaining the highest standards of quality and authenticity. Our
@@ -79,7 +79,7 @@ export default function MediaPage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl font-bold golden-title mb-6">Media Services</h2>
+            <h2 className="font-serif text-2xl font-bold golden-title mb-6">Media Services</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Comprehensive media solutions tailored to meet the diverse needs of modern businesses and organizations.
             </p>
@@ -94,7 +94,7 @@ export default function MediaPage() {
                     <div className="w-16 h-16 mb-6 bg-accent/10 flex items-center justify-center">
                       <IconComponent className="h-8 w-8 text-accent" />
                     </div>
-                    <h3 className="font-serif text-2xl font-bold text-primary mb-4">{feature.title}</h3>
+                    <h3 className="font-serif text-xl font-bold text-primary mb-4">{feature.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
                   </CardContent>
                 </Card>
@@ -107,7 +107,7 @@ export default function MediaPage() {
       {/* CTA Section */}
       <section className="py-20 bg-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-4xl font-bold text-white mb-6">Ready to Tell Your Story?</h2>
+          <h2 className="font-serif text-2xl font-bold text-white mb-6">Ready to Tell Your Story?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Partner with RICHMIND Media to create compelling content that engages your audience and drives your business
             forward.
