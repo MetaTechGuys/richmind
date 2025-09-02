@@ -42,11 +42,11 @@ export default function FintechPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="page-banner bg-[image:url(/img/companies/)] bg-primary">
+      <section className="page-banner bg-[image:url(/img/companies/2-fintech/cover.webp)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center text-white py-20">
+          <div className="text-center text-white py-20 glass bg-primary/30 rounded-2xl px-8">
             <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">Fintech</h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed text-shadow-2xs">
               The Fintech division is where technology and finance converge to reimagine the way the world transacts,
               invests, and saves. We build digital infrastructures that democratize financial services, reduce
               inefficiencies, and empower individuals and enterprises alike.

@@ -38,7 +38,7 @@ export default function PharmaceuticalMedicalPage() {
       <Navigation />
 
       {/* Hero section */}
-      <section className="page-banner bg-[image:url(/img/companies/)] bg-primary">
+      <section className="page-banner bg-[image:url(/img/companies/11-medical/cover.webp)] bg-primary/35">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white py-20">
             <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">Pharmaceutical & Medical</h1>

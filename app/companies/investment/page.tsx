@@ -42,8 +42,8 @@ export default function InvestmentPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="page-banner bg-[image:url(/img/companies/1-investment/cover.webp)] bg-primary/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="page-banner bg-[image:url(/img/companies/1-investment/cover.webp)] bg-primary/25">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-shadow-lg">
           <div className="text-center text-white py-20">
             <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">Investment</h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
