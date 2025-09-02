@@ -4,29 +4,61 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Phone, Mail, Clock } from "lucide-react"
+import { Phone, Mail, Clock, MapPin } from "lucide-react"
 
 export default function ContactPage() {
   const contactInfo = [
-    // {
-    //   icon: MapPin,
-    //   title: "Headquarter",
-    //   details: ["207 Regent Street. London W1B 3HH, United Kingdom"],
-    // },
+    {
+      icon: MapPin,
+      title: "Address",
+      details: (
+        <>
+          <p className="text-muted-foreground">
+            207 Regent Street. London W1B 3HH, <strong className="text-black">UK</strong>
+            <br />
+            Office 301, 3rd Floor Vision Tower, Business Bay Dubai, <strong className="text-black">UAE</strong>
+          </p>
+        </>
+      )
+    },
     {
       icon: Phone,
       title: "Phone",
-      details: ["+44 20 76 92 56 76"],
+      details: (
+        <>
+          <p className="text-muted-foreground">
+            <strong className="text-black">(UK) </strong>
+            +44 20 7692 5676
+            <br />
+            <strong className="text-black">(UAE) </strong>
+            +971 4 283 2333
+          </p>
+        </>
+      )
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["Info@RichMindHolding.com"],
+      details: (
+        <p className="text-muted-foreground">
+          Info@RichMindHolding.com
+          <br />
+          Info@RichMind.com
+        </p>
+      )
     },
     {
       icon: Clock,
       title: "Business Hours",
-      details: ["Monday - Friday: 9:00 AM - 6:00 PM", "Saturday: 10:00 AM - 2:00 PM"],
+      details: (
+        <>
+          <p className="text-muted-foreground">
+            Monday - Friday: 9:00 AM - 6:00 PM
+            <br />
+            Saturday: 10:00 AM - 2:00 PM
+          </p>
+        </>
+      ),
     },
   ]
 
@@ -81,7 +113,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">Message</label>
-                  <Textarea placeholder="Tell us more about your inquiry..." className="min-h-[130px]" />
+                  <Textarea placeholder="Tell us more about your inquiry..." className="min-h-[190px]" />
                 </div>
                 <Button className="w-full bg-primary hover:bg-primary/90">Send Message</Button>
               </CardContent>
@@ -109,11 +141,7 @@ export default function ContactPage() {
                           </div>
                           <div>
                             <h3 className="font-semibold text-primary mb-2">{info.title}</h3>
-                            {info.details.map((detail, index) => (
-                              <p key={index} className="text-muted-foreground">
-                                {detail}
-                              </p>
-                            ))}
+                            {info.details}
                           </div>
                         </div>
                       </CardContent>

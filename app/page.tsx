@@ -13,6 +13,7 @@ import ScrollInviter from "@/components/ui/ScrollInviter"
 
 interface IPoint {
   label: string;
+  href?: `https://${string}`;
   x: number;
   y: number;
   isMain?: boolean;
@@ -20,7 +21,7 @@ interface IPoint {
 
 const points: IPoint[] = [
   { label: 'London', x: 1055, y: 475, isMain: true },
-  { label: 'Dubai', x: 1409, y: 707, isMain: true },
+  { label: 'Dubai', x: 1409, y: 707, isMain: true, href: "https://richmind.com/" },
   { label: 'Pretoria', x: 1207, y: 1075 },
   { label: 'Ottawa', x: 410, y: 445 },
   { label: 'Canberra', x: 1890, y: 1080 },
@@ -105,13 +106,20 @@ export default function HomePage() {
           {/* <div className="absolute inset-0 bg-primary/60"></div> */}
         </div>
 
-        <div className="relative z-10 text-center text-white max-w-4xl m-auto px-4 pointer-coarse:mt-18!">
+        <Image
+          width={200}
+          height={200}
+          src="/img/RichMindlogo-white.png"
+          alt="Richmin Holding"
+          className="object-center object-contain h-50 absolute start-0 w-min top-14 pointer-coarse:hidden"
+        />
+        <div className="relative z-10 text-center text-white max-w-4xl m-auto mb-10 px-4 pointer-coarse:mt-18!">
           <Image
             width={200}
             height={200}
             src="/img/RichMindlogo-white.png"
             alt="Richmin Holding"
-            className="w-full object-center object-contain h-50"
+            className="object-center object-contain h-50 pointer-fine:hidden w-full max-sm:mt-16"
           />
           <h1 className="font-serif text-3xl md:text-4xl font-bold mb-6">
             <span className="text-nowrap">Global reach,</span>{' '}
@@ -120,7 +128,7 @@ export default function HomePage() {
           <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">
             Our mission is to use operational expertise and strategic investments to promote innovation, sustainability, and brilliance. We are committed to providing worldwide community service.
           </p>
-          <ScrollInviter className="mt-40 select-nones [animation-duration:2000ms] " href="#companies" />
+          <ScrollInviter className="mt-10 select-nones [animation-duration:2000ms] " href="#companies" />
         </div>
       </section>
 
@@ -210,6 +218,7 @@ export default function HomePage() {
                       className="z-100"
                       key={p.label}
                       label={p.label}
+                      href={p.href}
                       x={p.x}
                       y={p.y}
                       isMain={p.isMain}
@@ -302,6 +311,7 @@ export default function HomePage() {
 
 interface PointProps {
   label: string;
+  href?: string;
   x: number;
   y: number;
   isMain?: boolean;
@@ -309,8 +319,8 @@ interface PointProps {
   onClick?: VoidFunction;
 }
 
-const Point = ({ x, y, className, label, onClick, isMain }: PointProps) => {
-  return (
+const Point = ({ x, y, className, label, onClick, isMain, href }: PointProps) => {
+  const content = (
     <g onClick={onClick}>
       {isMain ? (
         <>
@@ -353,4 +363,9 @@ const Point = ({ x, y, className, label, onClick, isMain }: PointProps) => {
       />
     </g>
   );
+  return href ? (
+    <a href={href} target="_blank">
+      {content}
+    </a>
+  ) : content
 };
