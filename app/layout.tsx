@@ -26,7 +26,7 @@ const meta = {
   title: 'RichMind Holding',
   description:
     'Multinational Corporation With an Extensive Portofolio of Resources in Rapidly expanding industries.',
-  url: 'https://www.richmindholding.com/',
+  url: 'https://www.richmindholding.com',
 } as const;
 
 const metaImage = {
@@ -102,6 +102,13 @@ export default function RootLayout({
     <html lang="en" className={`${serif.variable} ${sans.variable} antialiased`}>
       <head>
         <link rel="icon" type="image/png" href="/icon.png" />
+        {process.env.NODE_ENV === 'production' ? (
+          <script
+            defer
+            src="https://umami.mediatechguys.site/script.js"
+            data-website-id="356a61d8-754a-4e19-a57d-a46e54051768"
+          />
+        ) : null}
       </head>
       <body className="font-sans">{children}</body>
     </html>
